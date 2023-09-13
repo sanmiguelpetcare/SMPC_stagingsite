@@ -1,0 +1,101 @@
+{
+  "name": "nutri-chunks-rebuild",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.9.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.7",
+    "@progress/kendo-data-query": "^1.6.0",
+    "@progress/kendo-react-dropdowns": "^5.9.0",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@shopify/app": "^3.28.0",
+    "@shopify/app-bridge": "^3.5.0",
+    "@shopify/app-bridge-utils": "^3.5.0",
+    "@shopify/cli": "^3.28.0",
+    "@shopify/shopify-api": "^6.0.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.0.4",
+    "aws-sdk": "^2.975.0",
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.1.1",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "express": "^4.18.1",
+    "firebase": "^9.9.4",
+    "framer-motion": "^7.6.5",
+    "include-media": "^1.4.10",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.8.0",
+    "numeral": "^2.0.6",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-icons": "^4.4.0",
+    "react-images-uploading": "^3.1.7",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-redux": "^8.0.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.7.0",
+    "react-slick": "^0.29.0",
+    "react-widgets": "^5.8.4",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "select-philippines-address": "^1.0.6",
+    "sequelize": "^6.21.4",
+    "shopify-node-api": "^1.11.1",
+    "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
+    "styled-components": "^5.3.5",
+    "swell-js": "^3.17.11",
+    "swell-node": "^4.0.10",
+    "toastr": "^2.1.4",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4",
+    "world_countries_lists": "^2.6.0",
+    "zipcodes-ph": "^1.1.2",
+    "zipcodes-ph2": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.54.8"
+  },
+  "proxy": "http://localhost:3000"
+}
