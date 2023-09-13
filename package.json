@@ -71,7 +71,7 @@
     "slick-carousel": "^1.8.1",
     "stream-browserify": "^3.0.0",
     "styled-components": "^5.3.5",
-    "typescript": "^5.2.2",
+    "typescript": "^3.2.1",
     "swell-js": "^3.17.11",
     "swell-node": "^4.0.10",
     "toastr": "^2.1.4",
