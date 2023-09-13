@@ -1,0 +1,40 @@
+.my-account {
+    padding: 50px 0;
+
+    .my-account-content-container {
+
+        .personal-details {
+
+            .profile-picture {
+
+            }
+
+            .personal-details-content {
+                width: 35%;
+                margin: auto;
+
+                .field-container {
+                    padding: 5px 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    p{
+                        &:first-child {
+                            font-weight: $fw-semi-bold;
+                        }
+
+                        &:last-child {
+                            font-weight: $fw-medium;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .furbaby-details {
+            
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.pawprint-signup-container {
+    
+    button {
+        margin-top: 20px;
+        padding: 5px 30px;
+        font-family: $lucky;
+        font-size: $h2-font-size;
+        color: $color-white;
+        border: none;
+        background-color: $color-blue;
+        border-radius: 40px;
+        letter-spacing: 0.1em;
+
+        @include media("<tablet") {
+            font-size: $h5-font-size;
+        }
+    }
+}

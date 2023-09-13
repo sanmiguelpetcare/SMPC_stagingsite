@@ -1,0 +1,949 @@
+@keyframes accordion {
+    from { 
+        height: 0;
+        overflow: hidden;
+    }
+    to {
+        height: 40vh;
+        overflow: scroll; 
+     }
+}
+
+@keyframes anim {
+    from { top: 0 }
+    to { top: 50px }
+}
+
+@keyframes moving {
+    from { transform: scale(0) }
+    to { transform: scale(1) }
+}
+
+.protect-page {
+  
+    .protect-page-heading-section {
+
+        .protect-page-main-container {
+            display: flex;
+            padding-top: 50px;
+
+            .logo-container {
+                width: 30%;
+    
+                .logo-content-container {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .selected {
+                        text-align: center;
+
+                        img {
+                            width: 60%;
+                        }
+                    }
+
+                    .not-selected {
+                        display: flex;
+                        align-items: center;
+
+                        .inactive {
+                            text-align: center;
+
+                            img {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .product-page-heading-content-container {
+                text-align: left;
+                max-width: 780px;
+                margin: auto;
+                width : 70%;
+
+                h1 {
+                    color: $color-blue;
+                }
+    
+                h6 {
+                    padding: 10px 0;
+                    font-size: $h3-font-size;
+                }
+
+                .month-inclussion-container {
+                    padding-bottom: 10px;
+
+                    .content {
+                        display: flex;
+
+                        p {
+                            font-size: 13px !important;
+                            padding: 7px 10px;
+                            margin-right: 10px;
+                            border-radius: 10px;
+
+                            &.included {
+                                color: $color-white;
+                                background-color: $color-orange;
+                                
+                            }
+
+                            &.excluded {
+                                color: $color-white;
+                                background-color: $color-lighter-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .protect-page-content-section {
+        padding: 50px;
+
+        @include media("<desktop") {
+            padding: 0;
+        }
+
+        .next-button {
+            text-align: center; 
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 50px;
+
+            @include media("<desktop") {
+                gap: 10px;
+            }
+
+            a {
+                width: 140% !important;
+            }
+
+            button {
+                width: 100%;
+                background-color: $color-lighter-gray;
+                color: $color-dark-gray;
+                border: 2px solid $color-lighter-gray;
+                transition: all .2s ease-in-out;
+                pointer-events: none;
+
+                &.enable {
+                    background-color: $color-orange;
+                    color: $color-white;
+                    border: 2px solid $color-orange;
+                    pointer-events: initial;
+
+                    &:hover {
+                        background-color: $color-white;
+                        color: $color-orange;
+                    }
+                }
+            }
+
+        }
+
+        .protect-page-content-container {
+
+            .protect-page-animation-container {
+
+                // .protect-animation-image {
+                //     display: flex;
+                //     position: relative;
+
+                //     &.stick {
+                //         position: fixed;
+                //         top: 110px;
+                //     }
+
+                //     .chunky-image-container {
+                //         z-index: 99;
+
+                //         img {
+                //             width: 400px;
+                //         }
+                //     }
+
+                //     .selected-product-container {
+                //         position: absolute;
+                //         display: flex;
+                //         flex-wrap: wrap;
+                //         gap: -5px;
+
+                //         img {
+                //             width: 100px;
+                //             height: 110px;
+                //             position: absolute;
+
+                //             &:nth-child(1) {
+                //                 z-index: 9;
+                //                 top: 20px;
+                //                 left: 100px;
+                //                 filter: drop-shadow(0px 5px 5px #0000);    
+                //                 // animation-name: moving;
+                //                 // animation-duration: 1s;
+                //                 // animation-timing-function: ease-in-out;                           
+                //             }
+
+                //             &:nth-child(2) {
+                //                 z-index: 7;
+                //                 top: 35px;
+                //                 left: 185px;
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //                 // animation-name: moving;
+                //                 // animation-duration: 1s;
+                //                 // animation-timing-function: ease-in-out;  
+                //             }
+
+                //             &:nth-child(3) {
+                //                 z-index: 8;
+                //                 top: 20px;
+                //                 left: 260px;
+                //                 transform: rotate(10deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(4) {
+                //                 z-index: 4;
+                //                 top: -40px;
+                //                 left: 140px;
+                //                 transform: rotate(355deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(5) {
+                //                 z-index: 6;
+                //                 top: -40px;
+                //                 left: 210px;
+                //                 transform: rotate(5deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(6) {
+                //                 z-index: 5;
+                //                 top: -40px;
+                //                 left: 70px;
+                //                 transform: rotate(350deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(7) {
+                //                 z-index: 3;
+                //                 top: -40px;
+                //                 left: 260px;
+                //                 transform: rotate(10deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(8) {
+                //                 z-index: 2;
+                //                 top: -110px;
+                //                 left: 170px;
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(9) {
+                //                 z-index: 1;
+                //                 top: -100px;
+                //                 left: 230px;
+                //                 transform: rotate(10deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+
+                //             &:nth-child(10) {
+                //                 z-index: 0;
+                //                 top: -100px;
+                //                 left: 100px;
+                //                 transform: rotate(350deg);
+                //                 filter: drop-shadow(0px 5px 5px #0000);
+                //             }
+                //         }
+
+                       
+                //     }
+                // }
+            }
+
+            .protect-page-product-main-container {
+
+                .step-main-container {
+                    padding: 20px 0; 
+
+                    &.active {
+                        display: block;
+                    }
+
+                    &.inactive {
+                        display: none;
+                    }
+
+                    .step-child-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        @include media("<desktop") {
+                            display: block;
+                        }
+
+                        .image-container {
+                            width: 30%;
+                            z-index: 1;
+                            filter: drop-shadow(10px 10px 4px $color-dark-gray);
+
+                            img {
+                                width: 100%;
+                            }
+
+                            @include media("<desktop") {
+                                display: none;
+                            }
+                        }
+
+                        .step-child-main-content {
+                            background-color: $color-lower-gray;
+                            border-radius: 30px;
+                            width: 70%;
+                            padding: 40px 40px 40px 70px;
+                            transform: scale(.95);
+                            margin-left: -80px;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                            @include media("<desktop") {
+                                width: 100%;
+                                padding: 20px;
+                                transform: scale(1);
+                                margin: auto;
+                            }
+
+                            .step-heading {
+                                color: $color-blue;
+                            }
+
+                            .step-subheading {
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                }
+
+                .first-step-main-container {
+                    
+                    .first-step-container {
+                        &::-webkit-scrollbar {display:none;}
+
+
+                        .delivery-option-button-container {
+                            display: flex;
+                            justify-content: space-around;
+                            gap: 30px;
+                            
+                            .delivery-button-container {
+                                width: 100%;
+
+                                button {
+                                    width: 100%;
+                                    background-color: $color-white;
+                                    color: $color-blue;
+                                    border: 1px solid $color-blue;
+                                    transition: all .2s ease-in-out;
+                                }
+
+                                .only-hover {
+
+                                    &:hover {
+                                        background-color: $color-light-blue;
+                                    }
+                                }
+
+                                .no-hover-clicked {
+                                    background-color: $color-blue;
+                                    color: $color-white;
+                                }
+    
+                                .delivery-button-subheading {
+                                    text-align: center;
+                                    padding: 20px 0;
+                                    width: 80%;
+                                    margin: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .second-step-main-container {
+                
+                    
+                    .second-step-monthly-container {
+                        
+                        .product-items-container {
+                            width: 100%;
+                            height: auto;
+                            overflow: scroll;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            &::-webkit-scrollbar {display:none;}
+                        }
+
+                        .product-item-container {
+                            margin-bottom: 20px;
+                            width: 100%;
+                            position: relative;
+                            
+                            .product-name-container {
+                                letter-spacing: 0;
+
+                                span {
+                                    font-size: 14px;
+                                    margin-right: 20px;
+                                    display: inline-block;
+                                    color: #BBB;
+                                    letter-spacing: 0;
+                                }
+                            }
+
+                            .product-input-container {
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                                position: absolute;
+                                top: 0;
+
+                                .add-button, .remove-button {
+                                    cursor: pointer;
+                                    width: 30px;
+                                    margin-bottom: 2px;
+                                    height: 30px;
+                                    // background-color: $color-weird-gray;
+                                    // color: $color-black;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 10px;
+
+                                    p {
+                                        font-size: $h3-font-size;
+                                    }
+                                }
+
+                                .quantity {
+                                    width: 30px;
+                                    margin-bottom: 2px;
+                                    height: 30px;
+                                    background-color: $color-blue;
+                                    color: $color-white;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 10px;
+
+                                }
+
+                                h6 {
+                                    line-height: 1;
+                                    font-weight: $fw-medium;
+                                }
+                            }
+                        }
+
+                        .custom-container {
+                            
+                            .product-parent-container {
+                                display: flex;
+                                height: 350px;
+
+                                .product-child-container {
+                                    height: auto;
+                                    overflow: scroll;
+                                    &::-webkit-scrollbar {display:none;}
+
+                                    .month-button-container { 
+                                        border-top: 1px solid $color-black;
+                                        padding: 20px 0;
+                                        // pointer-events: none;
+                                        opacity: 0.3;
+        
+                                        &.enabled {
+                                            pointer-events: initial;
+                                            opacity: 1;
+                                        }
+        
+                                        .month-details {
+                                            span {
+                                                font-size: 14px;
+                                                margin-right: 20px;
+                                                display: inline-block;
+                                                color: #BBB;
+                                            }
+                                        }
+                                    }
+                
+                                    .product-list-container { 
+                                        &::-webkit-scrollbar {display:none;}
+
+                                        &.active {
+                                            height: auto;
+                                            overflow: hidden;
+                                            transition: all .5s ease-in-out;
+                                        }
+                
+                                        &.inactive {
+                                            height: 0;
+                                            overflow: hidden;
+                                            transition: all .5s ease-in-out;
+                                        }
+                                            
+                                        .product-with-subheading-container {
+        
+                                            .monthly-subheading-container {
+                                                padding-bottom: 20px;
+                                        
+                                            }
+        
+                                            .product-item-container {
+                                                width: 30%;
+
+                                                .specific-product-container {
+                                                    position: relative;
+                                                    margin: 5px 0;
+                                                    transition: all .2s ease-in-out;
+                                                    padding: 0 10px;
+                                                    border-radius: 10px;
+        
+                                                    &.bordered {
+        
+                                                        .specific-product-content {
+
+                                                            .product-image-container {
+
+                                                                img {
+                                                                    
+                                                                    &.product-selected {
+                                                                        opacity: 1;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+        
+                                                    &.only-hover {
+        
+                                                        &:hover {
+        
+                                                            .specific-product-content {
+
+                                                                .product-image-container {
+
+                                                                    img {
+                                                                        
+                                                                        &.product-selected {
+                                                                            opacity: 1;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+        
+                                                    .specific-product-content {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        align-items: center;
+                                                        text-align: center;
+                                                        width: 200px;
+                                                        padding: 10px;
+
+                                                        @include media("<tablet") {
+                                                            width: 100%;
+                                                        }
+        
+                                                        .product-image-container {
+                                                            position: relative;
+                            
+                                                            img {
+                                                                width: 90px;
+
+                                                                &.product-selected {
+                                                                    height: 100%;
+                                                                    width: 150%;
+                                                                    position: absolute;  
+                                                                    top:  50%;
+                                                                    left: 50%;
+                                                                    transform: translate(-50%, -50%);
+                                                                    z-index: -1;
+                                                                    opacity: 0;
+                                                                    transition: all .5s ease-in-out;
+                                                                }
+                                                            }
+                                                        }
+                            
+                                                        .product-name-container {
+                                                            width: 100%;
+                                                            padding-top: 10px;
+                                                            text-align: left;
+            
+                                                            p {
+                                                                font-size: 14px;
+                                                                
+                                                                &.weight-price {
+                                                                    padding-top: 5px;
+
+                                                                    @include media("<tablet") {
+                                                                        display: flex;
+                                                                        flex-direction: column;
+                                                                    }
+        
+                                                                    span {
+                                                                        color: $color-blue;
+                                                                        margin: auto;
+
+                                                                        @include media("<tablet") {
+                                                                            margin: unset;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                            
+                                                        .product-input-container {
+        
+                                                            p {
+                                                                font-size: 20px;
+                                                            }
+                                                            
+                                                            input {
+                                                                width: 100px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .regular-container {
+
+                            .product-list-container {  
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 10px;
+                                height: 350px;
+
+                                .product-items-container {
+                                    // height: auto;
+                                    // overflow: scroll;
+                                    // display: flex;
+                                    // flex-wrap: wrap;
+                                    // justify-content: center;
+                                    // &::-webkit-scrollbar {display:none;}
+
+                                    .product-item-container {
+                                        width: 30%;
+
+                                        @include media("<tablet") {
+                                            width: 100%;
+                                        }
+
+                                        .specific-product-container {
+                                            position: relative;
+                                            margin: 5px 0;
+                                            transition: all .2s ease-in-out;
+                                            padding: 0 10px;
+                                            border-radius: 10px;
+                                            
+                                            &.bordered {
+        
+                                                .specific-product-content {
+
+                                                    .product-image-container {
+
+                                                        img {
+    
+                                                            &.product-selected {
+                                                                opacity: 1;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+        
+                                            &.only-hover {
+        
+                                                &:hover {
+        
+                                                    .specific-product-content {
+
+                                                        .product-image-container {
+                                                            
+                                                            img {
+        
+                                                                &.product-selected {
+                                                                    opacity: 1;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+        
+                                            .specific-product-content {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                text-align: center;
+                                                width: 200px;
+                                                padding: 10px;
+
+                                                @include media("<tablet") {
+                                                    width: 100%;
+                                                }
+        
+                                                .product-image-container {
+                                                    position: relative;
+
+                                                    img {
+                                                        width: 90px;
+
+                                                        &.product-selected {
+                                                            height: 100%;
+                                                            width: 150%;
+                                                            position: absolute;  
+                                                            top: 50%;
+                                                            left: 50%;
+                                                            transform: translate(-50%, -50%);
+                                                            z-index: -1;
+                                                            opacity: 0;
+                                                            transition: all .5s ease-in-out;
+                                                        }
+                                                    }
+                                                }
+                    
+                                                .product-name-container {
+                                                    width: 100%;
+                                                    padding-top: 10px;
+                                                    text-align: left;
+    
+                                                    p {
+                                                        font-size: 14px;
+                                                        
+                                                        &.weight-price {
+                                                            padding-top: 5px;
+
+                                                            @include media("<tablet") {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                            }
+
+                                                            span {
+                                                                color: $color-blue;
+                                                                margin: auto;
+
+                                                                @include media("<tablet") {
+                                                                    margin: unset;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                    
+                                                .product-input-container {
+
+                                                    input {
+                                                        width: 100px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .third-step-main-container {
+
+                    .accordion-content-container {
+                            
+                        .step-subheading {
+
+                        }
+
+                        .calendar-container {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 30px;
+
+                            @include media("<tablet") {
+                                flex-direction: column-reverse;
+                            }
+
+                            .week-button-container {
+                                width: 40%;
+                                text-align: right;
+
+                                @include media("<tablet") {
+                                    width: 100%;
+                                }
+
+                                .button-container {
+                                    padding: 5px 0;
+
+                                    &.inactive {
+                                        
+                                        button {
+                                            padding: 5px 20px;
+                                            font-size: $h5-font-size;
+                                            border: 1px solid $color-dark-gray;
+                                            background-color: $color-weird-gray;
+                                            color: $color-dark-gray;
+
+                                            @include media("<tablet") {
+                                                width: 100%;
+                                            }
+
+                                            &:hover {
+                                                background-color: $color-light-gray;
+                                            }
+                                        }
+                                    }
+
+                                    &.active {
+
+                                        button {
+                                            padding: 5px 20px;
+                                            font-size: $h5-font-size;
+                                            background-color: $color-blue;
+                                            border: 1px solid $color-blue;
+                                            color: $color-white;
+
+                                            @include media("<tablet") {
+                                                width: 100%;
+                                            }
+            
+                                        }
+                                    }
+                                }
+                            }
+
+                            .calendar-image-container {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                width: 60%;
+
+                                img {
+                                    width: 80%;
+
+                                    @include media("<tablet") {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .circle-image {
+                                    position: absolute;
+                                    height: 30px;
+                                    width: 70%;
+                                    border: 2.5px red solid;
+                                    border-radius: 100px / 20px;
+
+                                    &.week-one {
+                                        left: 0;
+                                        top: 85px;
+                                    }
+
+                                    &.week-two {
+                                        left: 0;
+                                        top: 110px;
+                                    }
+
+                                    &.week-three {
+                                        left: 0;
+                                        top: 135px;
+                                    }
+
+                                    &.week-four {
+                                        left: 0;
+                                        top: 155px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    from { transform: translateX(100%) }
+    to { transform: translateX(0) }
+}
+
+.protect-page-modal-container {
+    position: fixed;
+    background-color: $color-white;
+    width: 50vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    z-index: 9999999;
+    overflow: scroll;
+    
+    &::-webkit-scrollbar {display:none;}
+
+    .protect-page-modal-heading {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        background-color: $color-blue;
+        padding: 20px 50px;
+        color: $color-white;
+
+        .heading-container {
+
+        }
+    }
+
+    .protect-page-modal-content {
+        padding: 0 80px 50px 80px;
+
+        .modal-subtitle-content {
+            display: flex;
+        }
+
+        .selected-product-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            .image-container {
+
+                img {
+                    width: 120px;
+                }
+            }
+
+            .product-name-container {
+                width: 300px;
+            }
+        }
+        
+    }
+}

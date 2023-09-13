@@ -1,0 +1,105 @@
+.dog-digest-single {
+
+    &.chihuahua {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                margin-left: 32vh !important;
+                width: 43vh !important;
+
+                @include media("<desktop") {
+                    margin-left: 28vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 80% !important;
+                    margin-left: unset !important;
+                }
+            }
+
+            .about-container {
+                margin-right: 32vh !important;
+                
+                @include media("<desktop") {
+                    width: 40vh !important;
+                    margin-right: 28vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-right: unset !important;
+                }
+            }
+
+            .extra-element-a-container {
+                width: 25vh;
+
+                @include media("<tablet") {
+                    width: 25% !important;
+                    right: 10% !important;
+                }
+            }
+
+            .extra-element-b-container {
+                width: 6vh;
+                top: 70vh;
+                z-index: 2;
+                left: 62vh;
+                transform: scaleX(-1);
+            }
+
+            .extra-element-c-container {
+                width: 5vh;
+                top: 47vh;
+                z-index: 2;
+                right: 37vh;
+            }
+        }
+
+        .physical-needs-section {
+            
+            #starEnergyLevel {
+                left: calc(60% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(80% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(20% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(40% - 10%);
+            }
+        }
+
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+                align-items: center;
+
+                .recommended-products {
+                    transform: scale(0.8) !important;
+    
+                    img {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+    
+                .dog-food-A-container {
+                    margin-top: -3%;
+                    margin-right: -11%;
+                }
+    
+                .dog-food-B-container {
+                    margin-bottom: -3%;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+}
+

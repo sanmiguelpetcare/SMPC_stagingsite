@@ -1,0 +1,91 @@
+.banner-slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+    height: 442px;
+
+    .background-image-container {
+       
+        .banner-slider-image {
+            height: 420px;
+            width: 1000px;
+            border-radius: 20px;
+            filter: drop-shadow(0px 5px 5px #0000);
+        }
+    }
+
+    .banner-slider-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: -100px;
+        gap: 20px;
+
+        img {
+            max-width: 410px;
+            
+            &.pawprintHeroimage {
+                max-width: 420px;
+            }
+
+            &.dogdigestHeroimage {
+                max-width: 520px;
+                margin-right: -50px;
+            }
+        }
+
+
+    
+        .text-content-container {
+            max-width: 490px;
+
+            &.pawprint-text-content-container {
+                text-align: center;
+                max-width: 350px;
+
+                img {
+                    max-width: 320px;
+                }
+            }
+
+            &.dogdigest-text-content-container {
+                text-align: center;
+                max-width: 380px;
+
+                .contentImage-container {
+                    position: relative;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    img {
+                        max-width: 350px;
+                    }
+
+                    h3 {
+                        position: absolute;
+                        color: $color-white;
+                        bottom: 30px;
+                    }
+                }
+            }
+
+            h1 {
+                color: $color-blue;
+
+                span {
+                    color: $color-orange;
+                }
+            }
+
+            p {
+                padding: 20px 0;
+                color: $color-black;
+                font-weight: $fw-semi-bold;
+            }
+        }
+    }
+}
+

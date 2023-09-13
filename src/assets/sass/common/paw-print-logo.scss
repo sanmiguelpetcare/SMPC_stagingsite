@@ -1,0 +1,69 @@
+.pawprint-popup {
+    position: fixed;
+    bottom: 20px;
+
+    .pawprint-popup-container {
+        height: 75%;
+
+        .pawprint-popup-content {
+            width: 400px;
+
+            .pawprint-popup-head {
+                display: flex;
+                align-items: center;;
+                gap: 20px;
+                background-color: $color-blue;
+                border-radius: 15px 15px 0 0;
+                padding: 20px;
+
+                p {
+                    color: $color-white;
+                }
+            }
+
+            .pawprint-popup-body {
+                background-color: $color-light-gray;
+                border-radius: 0 0 15px 15px;
+                padding: 0 20px 10px 20px;
+
+                .pawprint-popup-body-content {
+
+                    .button-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: $color-white;
+                        padding: 15px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pawprint-button {
+
+        .pawprint-button-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $color-blue;
+            border-radius: 35px;
+            height: 65px;
+            width: 160px;
+            padding: 17px;
+            
+            .pawprint-logo {
+    
+                img {
+                    width: 35px;
+                }
+            }
+    
+            .pawprint-text {
+                color: $color-white;
+                font-weight: $fw-bold;
+            }
+        }
+    }
+}

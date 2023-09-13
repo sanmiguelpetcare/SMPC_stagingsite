@@ -1,0 +1,130 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 1111px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 40px 0 40px;
+
+    @include media("<phone") {
+        padding: 0 20px 0 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    // letter-spacing: 0.1em;
+}
+
+.MuiContainer-root {
+    &.MuiContainer-maxWidthLg {
+        &.css-1oqqzyl-MuiContainer-root {
+            padding: 0 !important;
+            max-width: unset !important;
+        }
+    }
+} 
+
+.show-in-mobile {
+    display: none !important;
+
+    @include media("<desktop") {
+        display: unset !important;
+    }
+}
+
+.hide-in-mobile {
+
+    @include media("<tablet") {
+        display: none !important;
+    }
+}
+
+button {
+    padding: 5px 30px;
+    font-size: $h4-font-size;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: $fw-bold;
+    border-radius: 100px;
+    letter-spacing: 0em;
+    transition: all .5s ease-in-out;
+
+    @include media("<tablet") {
+        font-size: $h4-font-size-mobile;
+        padding: 5px 20px;
+    }
+}
+
+.paw-divider {
+    max-width: 100px !important;
+}
+
+.overlay-styles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+
+.carousel-overlay-styles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 20;
+
+    @include media("<tablet") {
+        background-color: $color-white;
+    }
+}
+
+
+// .desktop {
+
+//     @include media("<desktop") {
+//         display: none !important;
+//     }
+// }
+
+.error {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: $color-red //#ae3434;
+}
+
+.haserror {
+    input, textarea, .form-control {
+        border-color: $color-red //#ae3434 !important;
+    }
+}
+
+input, textarea {
+    &.haserror {
+        border-color: $color-red //#ae3434 !important;
+    }
+}

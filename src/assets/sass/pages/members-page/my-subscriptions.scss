@@ -1,0 +1,50 @@
+.my-subscriptions {
+    margin: 50px  0;
+
+    .subscription-content-container {
+        display: flex;
+        justify-content: space-between;
+
+        .orders {
+
+            .order-title {
+                margin-bottom: 20px;
+            }
+
+            .orders-content {
+                display: flex;
+                padding: 6px 0;
+                gap: 20px;
+
+                .product-details {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 500px;
+
+                    .product-name {
+                        width: 200px;
+                    }
+
+                    .weight-price {
+
+                    }
+                }
+            }
+        }
+
+        .subsciption-details {
+            width: 350px;
+
+            .parameters {
+                display: flex;
+                justify-content: space-between;
+                padding: 3px 0;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+.subscription-norecord {
+    padding: 250px 0;
+}

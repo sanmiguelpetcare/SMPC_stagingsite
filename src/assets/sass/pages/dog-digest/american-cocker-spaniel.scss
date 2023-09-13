@@ -1,0 +1,317 @@
+.dog-digest-single {
+
+    &.americanCockerSpaniel {
+
+        .dog-digest-hero-section {
+
+            .dog-digest-hero-container {
+
+                .blue-signage-container {
+
+                    .blue-signage-content {
+
+                        h1 {
+                            font-size: 1.8vh;
+                        }
+                    }
+                }
+
+                .main-dog-container {
+                    margin-left: auto;
+                    width: 34vh;
+                    top: 57%;
+                }
+    
+                .extra-element-a-container {
+                    width: 10vmax;
+                    top: 65%;
+                    margin-right: 13vh;
+                }
+    
+                .extra-element-b-container {
+                    display: none;
+                }
+    
+                .extra-element-c-container {
+                    display: none;
+                }
+            }
+        }
+    
+        .dog-digest-vital-statistics-section {
+    
+            .dog-digest-content-container {
+    
+                .dog-digest-statistics-container {
+                    display: flex;
+                    flex-flow: wrap;
+    
+                    .statiscics-aspect-container {
+                        width: 47%;
+                    }
+                }
+            }
+        }
+    
+        .physical-needs-section {
+            
+            .physical-needs-container {
+                
+                .bar-division-container {
+                    
+                    .physical-needs-bar {
+        
+                        .bar-animation {
+                                
+                            #starEnergyLevel {
+                                left: calc(80% - 10%);
+                            }
+    
+                            #starPotentialPlayfulness {
+                                left: calc(80% - 10%);
+                            }
+    
+                            #starExerciseNeeds {
+                                left: calc(50% - 10%);
+                            }
+    
+                            #starIntensity {
+                                left: calc(20% - 10%);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    
+        .recommended-variants-section {
+        
+            .recommended-variants-container {
+    
+                .recommended-products-container {
+    
+                    #dog-food-C-container {
+                        width: 0 !important;       
+                    }
+
+                    .recommended-products {
+                        width: 100vh;
+                        max-width: 175px;
+    
+                        .dog-food-A {
+                            transform: rotate(0deg);
+                            width: 100% !important;
+                            margin-top: -15%;
+                        }
+    
+                        .dog-food-B {
+                            width: 100% !important;
+                            left: -10%;
+                        }
+
+                        #dog-food-C-container {
+                            width: 0% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .featured-image-section {
+
+            .featured-image-container {
+
+                .banner-container {
+
+                    h2 {
+                        font-size: min(6vmin, 32px) !important; 
+                    }
+                }
+            }
+        }
+    }   
+
+    @media only screen and (min-width: 481px) {
+        &.americanCockerSpaniel {
+
+            .dog-digest-hero-section {
+        
+                .main-dog-container {
+                    margin-left: 0;
+                }
+
+                .signage-container {
+
+                    .signage-content {
+
+                        .description-container {
+
+                            p {
+                                font-size: var(--paragraph-font-size-mobile);
+                                line-height: var(--paragraph-line-height-mobile);
+                            }
+                        }
+                    }
+                }
+        
+                .extra-element-a-container {
+                    width: 5vmax;
+                    margin-right: 22vmax;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+        &.americanCockerSpaniel {
+
+            .dog-digest-hero-section {
+
+                .main-dog-container {
+                    margin-left: 23vh !important;
+                    top: 31% !important;
+                    width: 53vh !important;
+                }
+
+                .signage-container {
+
+                    .signage-content {
+
+                        .description-container {
+
+                            p {
+                                font-size: min(16px, 1.6vh) !important;
+                                line-height: var(--paragraph-line-height-desktop);
+                            }
+                        }
+                    }
+                }
+
+                .blue-signage-container {
+
+                    .blue-signage-content {
+
+                        h1 {
+                            font-size: min(8vmin, 21px) !important;
+                        }
+                    }
+                }
+        
+                .extra-element-a-container {
+                    width: 20vh !important;
+                    margin-right: -48vh !important;
+                    top: 9% !important;
+                }
+        
+                .extra-element-b-container {
+                    top: 27% !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    width: 102vh !important;
+                    display: block !important;
+                    z-index: 1;
+        
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .extra-element-c-container {
+                    top: 36% !important;
+                    margin-left: 16vh !important;
+                    width: 7vh !important;
+                    display: block !important;
+                    z-index: 18;
+        
+                    img {
+                        max-width: 100px !important;
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+
+            .dog-digest-vital-statistics-section {
+    
+                .dog-digest-content-container {
+        
+                    .dog-digest-statistics-container {
+                        flex-flow: nowrap;
+        
+                        .statiscics-aspect-container {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .physical-needs-section {
+
+                .physical-needs-container {
+
+                    .element-container {
+
+                        img {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            .recommended-variants-section {
+        
+                .recommended-variants-container {
+        
+                    .recommended-products-container {
+        
+                        .recommended-products {
+        
+                            .dog-food-A {
+                                transform: rotate(0deg);
+                                margin-top: -20%;
+                            }
+                        }
+                    }
+    
+                    .purple-bar-container {
+    
+                        .purplebar-image-container {
+                            margin-bottom: 2vh;
+                        }
+                    }
+                }
+            }
+
+            .grooming-section {
+
+                .grooming-container {
+
+                    .comb-info-container {
+
+                        .comb-bar-container {
+                            
+                            h2 {
+                                font-size: min(7vmin, 24px) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .featured-image-section {
+
+                .featured-image-container {
+
+                    .banner-container {
+
+                        h2 {
+                            font-size: min(7vmin, 24px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

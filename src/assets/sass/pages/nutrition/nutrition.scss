@@ -1,0 +1,654 @@
+.nutrition-page {
+    overflow-x: hidden;
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .centerpiece-kibble {
+        display: none;
+        position: absolute;
+        width: 18%;
+        top: 23%;
+        right: 25%;
+        transform: rotate(30deg);
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+
+        @include media("<desktop") {
+            display: none;
+        }
+    }
+
+    .centerpiece-capable-kibble {
+        position: absolute;
+        width: 18%;
+        top: 23%;
+        right: 41%;
+        transition: all 0.3s ease-in-out;
+        z-index: 5;
+    }
+
+    .nutrition-banner-section {
+        height: auto;
+        align-items: center;
+        display: flex;
+
+        .nutrition-banner-content-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            
+            .nutrition-banner-text-content-container {
+                width: 50%;
+                color: $color-black;
+
+                h1 {
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-weight: $fw-semi-bold;
+                }
+
+                .keep-your-furbaby-heading {
+                    color: $color-blue;
+                }
+
+                .listo-ganado-heading {
+                    color: $color-orange;
+                }
+
+                @include media("<desktop") {
+                    width: 100%;
+                }
+            }
+
+            .nutrition-hero-image {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .nutrition-hero-image-content {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .big-kibble {
+                        display: block;
+                        position: absolute;
+                        // transform: scaleX(1) !important;
+                        animation: rotation 30s linear infinite;
+                        width: 100% !important;
+                        top: 15%;
+
+                        // @include media("<desktop") {   
+                        //     display: unset;
+                        // }
+                    }
+                }
+
+                #dog-1 {
+                    width: 28%;
+                    height: auto;
+                    margin-bottom: -18%;
+                }
+                
+                #dog-2 {
+                    width: 35%;
+                    margin-top: -18%;
+                    margin-left: 75%;
+                    position: relative;
+
+                    #dog-food {
+                        position: absolute;
+                        width: 37%;
+                        bottom: -5%;
+                        right: 13%;
+                        transform: rotate(27deg);
+    
+                        // img {
+                        //     transform: rotate(27deg);
+                        // }
+                    }
+
+                    #dog {
+                        width: 70%;
+                    }
+                }
+
+                #product-shape {
+                    width: 55%;
+                    margin: auto;
+                    z-index: -1;
+
+                    img {
+                        width: 110%;
+                        transform: scaleX(1.3) rotate(120deg) ;
+                    }
+                }
+
+                .floating-kibble {
+                    position: absolute;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                #kibble1 {
+                    width: 6%;
+                    top: 3%;
+                    right: 35%;
+
+                    img {
+                        transform: rotate(-90deg);
+                    }
+                }
+
+                #kibble2 {
+                    width: 10%;
+                    top: 10%;
+                    right: 5%;
+
+                    img {
+                        transform: rotate(-30deg);
+                    }
+                }
+
+                #kibble3 {
+                    width: 8%;
+                    top: 55%;
+
+                    img {
+                        transform: rotate(45deg);
+                    }
+                }
+
+                @include media("<desktop") {
+                    width: 100%;
+                }
+            }
+
+            @include media("<tablet") {
+                flex-direction: column-reverse;
+            }
+
+            .kibble-background {
+                position: absolute;
+                width: 20%;
+                height: auto;
+                left: -12%;
+                top: 6%;
+            }
+        }
+    }
+
+    .blue-wave-top {
+        margin-bottom: -1px;
+    }
+
+    .blue-wave-bottom {
+        margin-top: -1px;
+    }
+
+    .nutrition-balanced-dog-food-section {
+        background-color: $color-new-blue;
+
+        .balanced-dog-food-container {
+            display: flex;
+            gap: 2%;
+
+            .capable-kibble-container {
+                width: 56%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .circular-text {
+                    animation: reveserotation 10s linear infinite;
+                }
+
+                .big-kibble {
+                    display: block;
+                    position: absolute;
+                    // transform: scaleX(1) !important;
+                    animation: rotation 30s linear infinite;
+                    width: 65% !important;
+                    // top: 15%;
+                    left: 18%;
+                    top: 20%;
+
+                    // @include media("<desktop") {   
+                    //     display: flex;
+                        // left: 18%;
+                        // top: 20%;
+                    // }
+                }
+
+                @include media("<tablet") {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+            
+            .balanced-dog-food-specs-container {
+                color: $color-white;
+                text-align: center;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .balanced-dog-food-specs {
+
+                    img {
+                        width: 20%;
+                        margin-bottom: 10%;
+                    }
+
+                    h3 {
+                        margin-bottom: 2%;
+                    }
+
+                    @include media("<tablet") {
+                        width: 50%;
+                    }
+                }
+
+                @include media("<tablet") {
+                    flex-direction: row;
+                    width: 100%;
+                }
+            }
+
+            @include media("<tablet") {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+
+    .dog-food-standard-section{
+        position: relative;
+
+        .kibble-background {
+            position: absolute;
+            width: 25%;
+            height: auto;
+            left: -15%;
+            bottom: -15%;
+            z-index: -3;
+        }
+
+        .kibble-background-1 {
+            position: absolute;
+            width: 8%;
+            height: auto;
+            right: -3%;
+            top: 36%;
+            z-index: -3;
+        }
+
+        .dog-food-standard-container {
+            display: flex;
+            gap: 10%;
+
+            .dog-food-standard-image-container {
+                width: 45%;
+                position: relative;
+
+                .floating-dog-food {
+                    position: absolute;
+                    width: 22%;
+                    height: 150px;
+                    z-index: 2;
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .dog-food-1 {
+                    left: -5%;
+                    top: 2%;
+                    transform: rotate(-10deg);
+
+                    img.shape {
+                        transform: rotate(90deg) scale(1.1);
+                    }
+                }
+
+                .dog-food-2 {
+                    right: -5%;
+                    transform: rotate(10deg);
+                }
+
+                .dog-food-3 {
+                    right: 1%;
+                    bottom: -10%;
+                    transform: rotate(20deg);
+
+                    img.shape {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .nutrition-hero-image-content {
+                    width: 75%;
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                        transform: scaleX(1.3) rotate(120deg) ;
+                    }
+
+                    .big-kibble {
+                        display: block;
+                        position: absolute;
+                        // transform: scaleX(1) !important;
+                        animation: rotation 30s linear infinite;
+                        width: 65% !important;
+                        top: 15%;
+                        z-index: 2;
+    
+                        // @include media("<desktop") {   
+                        //     display: flex;
+                        //     left: 18%;
+                        //     top: 13%;
+                        // }
+                    }
+                }     
+                
+                @include media("<tablet") {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+            .dog-food-standard-content-container {
+                width: 45%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+
+                h2 {
+                    margin-bottom: 5%;
+                    color: $color-blue;
+                }
+
+                .dog-food-standard-content {
+                    display: flex;
+                    font-weight: $fw-semi-bold;
+                    margin-bottom: 2%;
+
+                    img {
+                        width: 8%;
+                        height: fit-content;
+                        margin-top: 1%;
+                    }
+
+                    img.paw-even {
+                        transform: rotate(15deg);
+                    }
+
+                    img.paw-odd {
+                        transform: rotate(-15deg);
+                    }
+                }
+
+                @include media("<tablet") {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+
+            @include media("<tablet") {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    }
+
+    .pet-food-expert-section{
+
+        .pet-food-expert-container {
+            display: flex;
+            gap: 10%;
+
+            .pet-food-expert-image-container {
+                width: 45%;
+                position: relative;
+
+                .floating-dogtors {
+                    position: absolute;
+                    width: 27%;
+                    height: 150px;
+                    z-index: 2;
+
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .dogtor-1 {
+                    right: -5%;
+                }
+
+                .dogtor-2 {
+                    top: 55%;
+                    left: -10%;
+                }
+
+                .nutrition-hero-image-content {
+                    width: 75%;
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                        transform: scaleX(1.3) rotate(120deg) ;
+                    }
+
+                    .big-kibble {
+                        display: block;
+                        position: absolute;
+                        // transform: scaleX(1) !important;
+                        animation: rotation 30s linear infinite;
+                        width: 65% !important;
+                        top: 15%;
+                        z-index: 2;
+    
+                        // @include media("<desktop") {   
+                        //     display: flex;
+                        //     left: 18%;
+                        //     top: 13%;
+                        // }
+                    }
+                }     
+                
+                @include media("<tablet") {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+            .pet-food-expert-content-container {
+                width: 45%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+
+                h2 {
+                    margin-bottom: 5%;
+                    color: $color-blue;
+                }
+
+                .pet-food-expert-content {
+                    display: flex;
+                    font-weight: $fw-semi-bold;
+                    margin-bottom: 2%;
+                    width: 100%;
+
+                    img {
+                        width: 8%;
+                    }
+
+                    img.paw-even {
+                        transform: rotate(15deg);
+                    }
+
+                    img.paw-odd {
+                        transform: rotate(-15deg);
+                    }
+
+                    p {
+                        width: 92%;
+                    }
+                }
+
+                @include media("<tablet") {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+
+            @include media("<tablet") {
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+        }
+    }
+
+    .lets-talk-about-section {
+        // position: absolute;
+        background-color: $color-blue;
+        color: $color-white;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .lets-talk-about-heading-container {
+            text-align: center;
+            padding-bottom: 5%;
+
+            .lets-talk-about-logo {
+                width: 50%;
+                min-width: 400px;
+                padding: 20px;
+            }
+        }
+
+        .lets-talk-about-content-container {
+            display: flex;
+            align-items: center;
+
+            .lets-talk-about-icons-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 45%;
+                transition: 0.2s ease;
+
+                .single-icon-container {
+                    text-align: center;
+                    width: 20%;
+                    margin: 3% 4%;
+                    
+                    img {
+                        padding-bottom: 5px;
+                        width: 80%;
+                    }
+
+                    h6 {
+                        font-weight: $fw-medium;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.2s ease;
+                    }
+                }
+
+                @include media("<desktop") {
+                    width: 100%;
+                }
+            }
+
+            .lets-talk-about-description-container {
+                width: 60%;
+
+                .lets-talk-about-description-heading-container {
+                    
+                    h1 {
+                        text-align: center;
+                    }
+                }
+
+                .description-withicon-container {
+                    display: flex;
+                    gap: 2%;
+                    align-items: center;
+                    justify-items: center;
+                    padding: 10px;
+
+                    .icon-image-container {
+                        width: 20%;
+                        
+                        .description-icon {
+                            width: 100%;
+                        }
+                    }
+
+                    .box-description-container {
+                        position: relative;
+                        width: 78%;
+                        display: flex;
+                        align-items: center;
+                        
+                        .image-box {
+                            
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .description-container {
+                            position: absolute;
+                            text-align: center;
+                            width: 100%;
+                            z-index: 1;
+                            margin-top: -2%;
+
+                            p {
+                                padding: 5%;
+                                font-weight: $fw-semi-bold;
+                            }
+                        }
+                    }
+                }
+
+                @include media("<desktop") {
+                    width: 100%;
+                    margin-bottom: 5%;
+                }
+            }
+
+            @include media("<desktop") {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

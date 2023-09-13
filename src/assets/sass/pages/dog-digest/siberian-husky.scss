@@ -1,0 +1,130 @@
+.dog-digest-single {
+
+    &.siberianHusky {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container { 
+                margin-top: -28vh !important;
+                margin-left: 8vh !important;
+                width: 70vh !important;
+
+                @include media("<desktop") {
+                    margin-left: 0vh !important;
+                    margin-top: -26vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-left: unset !important;
+                    margin-top: -15% !important;
+                }
+            }
+
+            .about-container {
+                margin-right: 22vh !important;
+                width: 49vh !important;
+
+                @include media("<desktop") {
+                    width: 40vh !important;
+                    margin-right: 23vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 90% !important;
+                    margin-right: unset !important;
+                }
+
+                @include media("<phone") {
+                    width: 98% !important;
+                }
+            }
+
+            .extra-element-a-container {
+                
+                @include media("<tablet") {
+                    width: 30%;
+                    top: 70%;
+                }
+
+                @include media("<phone") {
+                    top: 73%;
+                }
+            }
+
+            .extra-element-b-container {
+                width: 5vh;
+                top: 80vh;
+                left: 34vh;
+                z-index: 2;
+            }
+
+            .extra-element-c-container {
+                width: 5vh;
+                top: 67vh;
+                right: 21vh;
+                z-index: 0;
+            }
+        }
+
+        .dog-digest-vital-statistics-section {
+
+            .element-container {
+                top: 30%;
+                width: 15%;
+                right: -10%;
+            }
+        }
+
+        .physical-needs-section {
+            
+            #starEnergyLevel {
+                left: calc(100% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(100% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(100% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(60% - 10%);
+            }
+
+            .element-container {
+                top: 50%;
+                width: 15%;
+                right: -10%;
+            }
+        }
+
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+                align-items: center;
+
+                .recommended-products {
+                    transform: scale(0.8) !important;
+    
+                    img {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+    
+                .dog-food-A-container {
+                    margin-top: -3%;
+                    margin-right: -11%;
+                }
+    
+                .dog-food-B-container {
+                    margin-bottom: -3%;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+}
+

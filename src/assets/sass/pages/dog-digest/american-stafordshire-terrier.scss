@@ -1,0 +1,43 @@
+.dog-digest-single {
+
+    &.americanStaffordShireTerrier {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                margin-top: -38vh !important;
+                width: 60vh !important;
+
+                @include media("<desktop") {
+                    width: 50vh !important;
+                    margin-top: -33vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 80% !important;
+                    margin-left: unset !important;
+                    margin-top: -8vh !important;
+                }
+
+                @include media("<phone") {
+                    margin-top: -4vh !important;
+                }
+            }
+
+            .about-container {
+                width: 49vh !important;
+
+                @include media("<desktop") {
+                    width: 43vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-right: unset !important;
+                }
+            }
+
+        }
+    }
+}
+

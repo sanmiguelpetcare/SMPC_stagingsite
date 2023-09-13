@@ -1,0 +1,144 @@
+.content-header {
+    padding-bottom: 20px;
+
+    .header-title {
+        p {
+            color: #AAA;
+        }
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: solid 1px #DDD;
+        margin-bottom: 20px;
+
+        .actions-container {
+            display: flex;
+            align-items: center;
+
+            button {
+                padding: 0;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .filter-container {
+        display: flex;
+        align-items: center;
+
+        > label {
+            margin-right: 30px;
+        }
+
+        .dropdown-container {
+            margin-right: 30px;
+        }
+
+        .in-stock {
+            display: flex;
+            align-items: center;
+
+            label {
+                margin-right: 10px;
+            }
+        }
+
+        .filter-toggle {
+            a {
+                display: inline-flex;
+                align-items: center;
+
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .filter-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 320px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation-name: slide;
+            animation-duration: 0.2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+
+            &.closing {
+                animation-name: slideout;
+                animation-fill-mode: forwards;
+            }
+
+            .panel-header {
+                padding: 15px 10px 0;
+
+                a {
+                    color: #DDD;
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+
+            .filter-item {
+                border-bottom: solid 1px #DDD;
+                padding: 20px 30px;
+
+                .item-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .item-container {
+                    padding-top: 20px;
+
+                    .checkbox-container {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .checkbox {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .search-coontainer {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .form-item {
+            padding-bottom: 0;
+
+            input {
+                border-radius: 50px;
+                min-width: 300px;
+            }
+        }
+    }
+}

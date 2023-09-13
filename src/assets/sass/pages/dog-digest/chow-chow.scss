@@ -1,0 +1,275 @@
+.dog-digest-single {
+
+    &.chowChow {
+
+        .dog-digest-hero-section {
+
+            .dog-digest-hero-container {
+                
+                .main-dog-container {
+                    width: 32vh;
+                    top: 55%;
+                    margin-left: auto;
+                }
+                
+                .blue-signage-container {
+
+                    .blue-signage-content {
+
+                        h1 {
+                            font-size: 2.8vh;
+                        }
+                    }
+                }
+
+                .signage-container {
+
+                    .signage-content {
+
+                        .description-container {
+
+                            p {
+                                font-size: min(11px, 1.4vh);
+                            }
+                        }
+                    }
+                }
+    
+                .extra-element-a-container {
+                    width: 8vmax;
+                    top: 65%;
+                }
+    
+                .extra-element-b-container {
+                    display: none;
+                }
+    
+                .extra-element-c-container {
+                    display: none;
+                }
+            }
+        }
+    
+        .dog-digest-vital-statistics-section {
+    
+            .dog-digest-content-container {
+    
+                .dog-digest-statistics-container {
+                    display: flex;
+                    flex-flow: wrap;
+
+                    .statiscics-aspect-container {
+                        width: 47%;
+                    }
+                }
+            }
+        }
+    
+        .physical-needs-section {
+            
+            .physical-needs-container {
+                
+                .bar-division-container {
+                    
+                    .physical-needs-bar {
+        
+                        .bar-animation {
+                                
+                            #starEnergyLevel {
+                                left: calc(40% - 10%);
+                            }
+    
+                            #starPotentialPlayfulness {
+                                left: calc(20% - 10%);
+                            }
+    
+                            #starExerciseNeeds {
+                                left: calc(40% - 10%);
+                            }
+    
+                            #starIntensity {
+                                left: calc(40% - 10%);
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+
+                .recommended-products-container {
+                    width: min(53vh, 450px);
+                    max-width: 450px;
+
+                    .recommended-products {
+
+                        .dog-food-A {
+                            transform: rotate(-10deg);
+                            margin-top: 0%;
+                        }
+
+                        .dog-food-B {
+                            width: 110% !important;
+                            left: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+
+    @media only screen and (min-width: 481px) {
+        
+        &.chowChow {
+
+            .dog-digest-hero-section {
+        
+                .main-dog-container {
+                    margin-left: 0;
+                }
+
+                .signage-container {
+
+                    .signage-content {
+
+                        .description-container {
+
+                            p {
+                                font-size: var(--paragraph-font-size-mobile);
+                                line-height: var(--paragraph-line-height-mobile);
+                            }
+                        }
+                    }
+                }
+        
+                .extra-element-a-container {
+                    width: 5vmax;
+                    margin-right: 22vmax;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+       
+        &.chowChow {
+
+            .dog-digest-hero-section {
+
+                .main-dog-container {
+                    margin-left: 28vh !important;
+                    width: 47vh !important;
+                    top: 32% !important;
+                }
+
+                .blue-signage-container {
+
+                    .blue-signage-content {
+
+                        h1 {
+                            font-size: min(8vmin, 24px) !important;
+                        }
+                    }
+                }
+
+                .signage-container {
+
+                    .signage-content {
+
+                        .description-container {
+
+                            p {
+                                font-size: min(16px, 1.6vh) !important;
+                                line-height: var(--paragraph-line-height-desktop);
+                            }
+                        }
+                    }
+                }
+
+                .extra-element-a-container {
+                    width: 13vh !important;
+                    top: 11% !important;
+                    margin-right: -53vh !important;
+                }
+        
+                .extra-element-b-container {
+                    top: 74% !important;
+                    margin-left: auto !important;
+                    margin-right: 98vh !important;
+                    width: 16vh !important;
+                    display: block !important;
+                    z-index: 1;
+        
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scaleX(-1);
+                    }
+                }
+
+                .extra-element-c-container {
+                    top: 74% !important;
+                    margin-right: auto !important;
+                    margin-left: 98vh !important;
+                    width: 16vh !important;
+                    display: block !important;
+                    z-index: 1;
+        
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .dog-digest-vital-statistics-section {
+    
+                .dog-digest-content-container {
+        
+                    .dog-digest-statistics-container {
+                        flex-flow: nowrap;
+        
+                        .statiscics-aspect-container {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .recommended-variants-section {
+        
+                .recommended-variants-container {
+    
+                    .purple-bar-container {
+    
+                        .purplebar-image-container {
+                            margin-bottom: 2vh;
+                        }
+                    }
+                }
+            }
+
+            .grooming-section {
+
+                .grooming-container {
+
+                    .comb-info-container {
+
+                        .comb-bar-container {
+
+                            h2 {
+                                font-size: min(7vmin, 30px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

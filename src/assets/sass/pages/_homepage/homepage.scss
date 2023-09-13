@@ -1,0 +1,181 @@
+.home-page {
+
+    .home-page-banner-section {
+        height: 200px;
+    }
+
+    .home-page-blurb-section {
+        height: auto;
+        background-image: url("../../../media/homepage-assets/homepage_blue_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 1px;
+        margin: auto;
+
+        .homepage-slider-container{
+            margin: -180px 0;
+        }
+
+        .dog-with-cart-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            z-index: 1;
+
+            .dog-with-cart {
+                max-width: 300px;
+            }
+                              
+            .nc-falling {
+                max-width: 250px;
+                margin-top: -120px;
+            }
+        }
+
+        .kibble-capable-container {
+            padding-top: 50px;
+            margin-top: -400px;
+
+            .kibble-capable-heading-container {
+                text-align: center;
+                color: $color-white;
+                max-width: 690px;
+                margin: auto;
+
+                h2 {
+                    padding: 20px 0;
+                }
+            }
+
+            .kibble-capable-content-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-top: 120px;
+                padding-bottom: 10px;
+
+
+                .kibble-capable-animation-container {
+                    margin-bottom: -50px;
+                    z-index: 1;
+
+                     img {
+                        max-width: 600px;
+                        margin-right: -100px;
+
+                     }
+                }
+
+                .kibble-blurb-content-container {
+                    background-color: $color-white;
+                    border-radius: 25px;
+                    max-width: 400px;
+                    padding: 40px 20px;
+                    color: $color-blue;
+
+
+                    .kibble-blurb-content {
+                        display: flex;
+                        padding: 20px 0;
+                        align-items: flex-start;
+                        gap: 20px;
+
+                        img {
+                            max-width: 50px;
+                        }
+
+                        .kibble-blurb-text-content {
+
+                            h4 {
+                                padding-bottom: 10px;
+                             }
+                        }
+                    }
+
+                    .learn-more-button-container {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .see-our-product-section {
+        height: 500px;
+        padding: 100px;
+    }
+
+    .testimonials-section {
+        height: auto;
+        background-image: url("../../../media/homepage-assets/homepage_blue_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+
+
+        .testimonials-container {
+
+            .testimonials-heading-container {
+                color: $color-white;
+                text-align: center;
+
+                img {
+
+                }
+
+                h3 {
+                    padding-top: 10px;
+                }
+            }
+
+            .testimonials-content-container {
+
+                .testimonial-content {
+                    padding: 40px;
+
+
+                    .testimonial-white-box {
+                        color: $color-black;
+                        background-color: $color-white;
+                        padding: 20px 40px 40px 70px;
+                        margin: auto;
+                        max-width: 700px;
+                        position: relative;
+                        border-radius: 20px;
+
+                        h4 {
+                            padding-bottom: 10px;
+                        }
+
+                        .experts-image {
+                            max-width: 100px;
+                            position: absolute;
+                            top: -20px;
+                            left: -40px;
+                            border: 10px solid $color-white;
+                            border-radius: 100px;
+                        }
+                        
+                        .testimony-container {
+                            display: flex;
+                            gap: 20px;
+                            align-items: flex-start;
+                            padding-top: 20px;
+
+                            .icon-image {
+                                max-width: 30px;
+                            }
+
+                            p {
+                                font-weight: $fw-bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

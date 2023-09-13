@@ -1,0 +1,174 @@
+.cart-page {
+    padding: 50px 0;
+
+    @include media("<desktop") {
+        padding: 20px 0 30px 0;
+    }
+
+    h4 {
+        font-weight: $fw-semi-bold;
+    }
+
+    h5 {
+        font-weight: $fw-semi-bold;
+    }
+
+    .cart-page-content-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+
+        @include media("<desktop") {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .cart-page-product-list-container { 
+            width: 70%;
+
+            @include media("<desktop") {
+                width: 100%;
+            }
+
+            .product-list-heading-container {
+                padding-bottom: 25px;
+
+                @include media("<desktop") {
+                    padding: 0;
+                }
+
+                .product-list-heading {
+
+                }
+            }
+    
+            .product-list-single-container {
+
+                .product-list-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 25px 0;
+                    gap: 30px;
+                    border-top: 1px solid $color-light-gray;
+
+                    @include media("<desktop") {
+                        gap: 10px;
+                    }
+
+                    .image-name-qty-price-container {
+                        display: flex;
+                        gap: 20px;
+
+                        .product-image-container {
+                            display: flex;
+                            gap: 40px;
+    
+                            .product-list-image-container {
+                                img {
+                                    width: 50px;
+                                }
+                            }
+            
+                            .product-name-price-container {
+                                width: 100%;
+            
+                                p {
+                                    &:last-child {
+                                        padding-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .quantity-price-name-container {
+                            display: flex;
+                            gap: 40px;
+                            align-items: center;
+
+                            @include media("<tablet") {
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+    
+                            .product-quantity-container {
+                                input {
+                                    width: 75px;
+                                    border-radius: 5px;
+                                    bordeR: solid 1px #BBB;
+                                    padding: 5px 15px;
+                                }
+                            }
+            
+                            .product-price-container {
+            
+                            }
+                        }
+                    }
+    
+                    .product-romve-container {
+    
+                    }
+                }
+            }
+        }
+
+        .cart-page-checkout-container {
+            width: 30%;
+
+            @include media("<desktop") {
+                width: 100%;
+            }
+
+            .cart-page-checkout-header-container  {
+                padding-bottom: 25px;
+
+                @include media("<desktop") {
+                    padding: 0;
+                }
+
+                .cart-page-checkout-heading {
+
+                }
+                
+            }
+
+            .cart-page-checkout-content-container {
+                padding-top: 25px;
+                border-top: 1px solid $color-light-gray;
+
+                .cart-page-subtotal-container {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: right;;
+                    
+                    h5 {
+                        font-family: $quick-sand;
+                    }
+                    
+                }
+            }
+
+            .cart-page-checkout-button {
+                padding-top: 20px;
+
+                .cart-page-checkout-button-container {
+
+                    button {
+                        border: 1px solid $color-blue;
+                        background-color: $color-blue;
+                        color: white;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .empty-cart-container {
+        padding: 250px 0;
+        text-align: center;;
+    }
+}
+
+                    

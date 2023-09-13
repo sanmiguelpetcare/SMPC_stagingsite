@@ -1,0 +1,56 @@
+// .navbar {
+    
+//     ul {
+//         display: flex;
+//         gap: 40px;
+
+//         @include media("<desktop") {
+//             gap: 13px;
+
+//         }
+
+//         @include media("<tablet") {
+//             display: none;
+//         }
+
+//         .product-nav-container {
+//             position: relative;
+
+//             .popup-container {
+//                 opacity: 0;
+//                 display: none;
+//                 transition: all .2s ease-in-out;
+//                 background-color: $color-dark-gray;  
+//                 text-align: center;
+//                 right: -25px;
+
+//                 .popup-item {
+//                     padding: 5px;
+
+//                     &.hover {
+//                         background-color: $color-blue !important;
+//                         color: $color-white;
+//                     }
+
+//                     p {
+//                         padding: 5px;
+//                         color: $color-blue !important;
+//                     }
+//                 }
+//             }
+
+//             &:hover {
+
+//                 .popup-container {
+//                     opacity: 1;
+//                     display: block;
+//                 }
+//             }
+//         }
+
+//         li{
+//             font-weight: $fw-regular;
+//             color: $color-dark-gray !important;
+//         }
+//     }
+// }

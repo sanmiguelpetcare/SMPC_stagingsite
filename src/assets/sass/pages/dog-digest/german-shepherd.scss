@@ -1,0 +1,114 @@
+.dog-digest-single {
+
+    &.germanShepherd {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                width: 55vh !important;
+                margin-top: -33vh !important;
+                margin-left: 18vh !important;
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-left: unset !important;
+                    margin-top: -5vh !important;
+                }
+            }
+
+            .about-container {
+                width: 49vh !important;
+                margin-right: 18vh !important;
+
+                @include media("<desktop") {
+                    width: 40vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-right: unset !important;
+                }
+            }
+
+            .extra-element-a-container {
+                width: 16vh !important;
+                right: 13vh;
+
+                @include media("<desktop") {
+                    width: 12vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 15% !important;
+                    right: 0vh;
+                    top: 67%;
+                }
+            }
+
+            .extra-element-b-container {
+                width: 16vh !important;
+                transform: scaleX(-1);
+            }
+
+            .extra-element-c-container {
+                width: 16vh !important;
+            }
+        }
+
+        .dog-digest-vital-statistics-section {
+
+            .element-container {
+                top: 30%;
+            }
+        }
+
+        .physical-needs-section {
+
+            .element-container {
+                width: 25vh;
+            }
+
+            #starEnergyLevel {
+                left: calc(100% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(100% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(100% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(100% - 10%);
+            }
+        }
+
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+                align-items: center;
+
+                .recommended-products {
+                    transform: scale(0.8) !important;
+    
+                    img {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+    
+                .dog-food-A-container {
+                    margin-top: -3%;
+                    margin-right: -11%;
+                }
+    
+                .dog-food-B-container {
+                    margin-bottom: -3%;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,22 @@
+#main-header {
+    height: 80px;
+    position: relative;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .profile-container {
+        a {
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            i {
+                font-size: 30px;
+                margin-left: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+
+  
+// usage: Set style for input fields
+@mixin fields {
+    input[type=search],
+    input[type=url],
+    input[type=number],
+    input[type=text],
+    input[type=password],
+    input[type=tel],
+    input[type=email],
+    input.text,
+    input.title,
+    textarea, select {
+        @content;
+    }
+}
+  
+// usage: Add placeholder style for input fields
+@mixin placeholder {
+    .placeholder { @content; }
+    :-moz-placeholder { @content; }
+    ::-moz-placeholder { @content; }
+    :-ms-input-placeholder { @content; }
+    ::-webkit-input-placeholder { @content; }
+    ::placeholder { @content; }
+    :placeholder { @content; }
+}
+  
+// generic transform
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+  
+//box shadow
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin inlineFlexbox() {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: -o-inline-flex;
+    display: inline-flex;
+}
+
+@mixin flexbox() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+  
+@mixin flexAI($position) {
+    -webkit-box-align: $position;
+    -moz-box-align: $position;
+    -ms-flex-align: $position;
+    -webkit-align-items: $position;
+    align-items: $position;
+}
+  
+@mixin flexJC($position) {
+    -webkit-box-pack: $position;
+    -moz-box-pack: $position;
+    -ms-flex-pack: $position;
+    -webkit-justify-content: $position;
+    justify-content: $position;
+}
+  
+@mixin flexWrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+  
+@mixin flexBasis($basis) {
+    -webkit-flex: $basis;
+    flex: $basis;
+}

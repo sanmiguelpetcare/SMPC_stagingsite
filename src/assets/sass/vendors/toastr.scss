@@ -1,0 +1,26 @@
+#toast-container {
+    &.toast-bottom-right {
+        bottom: 30px;
+        right: 30px;
+    }
+    
+    > .toast-success {
+        background-image: none !important;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: none !important;
+        opacity: 0.9;
+        margin-bottom: 0;
+        width: 400px;
+    }
+
+    .toast-close-button {
+        position: absolute;
+        right: 20px;
+        width: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none !important;
+        border: none;
+    }
+}

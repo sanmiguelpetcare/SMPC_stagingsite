@@ -1,0 +1,107 @@
+.distributor-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999999;
+    padding: 30px 50px 50px 50px;
+    background-color: #FFFFFF;
+    width: 500px;
+
+    @include media("<desktop") {
+        width: 90%;
+        padding: 20px 20px 50px 20px;
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    .distributor-modal-container {
+        position: relative;
+
+        .distributor-header-container {
+            color: $color-blue;
+        }
+
+        .dropdown-field {
+            border: 1px $color-lighter-gray solid;
+            margin-top: 10px;
+            height: 40px;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            cursor: pointer;
+
+            .arrow-down {
+
+                &:after {
+                    content: "" !important;
+                    position: absolute;
+                    right: 10px;
+                    border: solid $color-dark-gray;
+                    border-width:  0px 3px 3px 0;
+                    display: inline-block;
+                    padding: 5px;
+                    transform: rotate(45deg);
+                }
+            }
+
+            .arrow-up {
+                
+                &:after {
+                    content: "" !important;
+                    position: absolute;
+                    top: 15px;
+                    right: 10px;
+                    border: solid $color-dark-gray;
+                    border-width:  0px 3px 3px 0;
+                    display: inline-block;
+                    padding: 5px;
+                    transform: rotate(225deg);
+                }
+            }
+        }
+
+        .distributor-dropdown-container {
+            position: absolute;
+            background-color: $color-white;
+            margin-top: 5px;
+            height: 200px;
+            border: 1px $color-lighter-gray solid;
+            overflow: scroll;
+            &::-webkit-scrollbar {display:none;};
+            width: 100%;
+
+            .distributor-dropdown {
+                padding: 10px 0;
+
+                .item-container {
+                    cursor: pointer;
+                    color: $color-dark-gray;
+                    padding: 5px 10px;
+
+                    &:hover {
+                        background-color: $color-lighter-gray;
+
+                        p {
+                            color: $color-black;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .button-container {
+            margin-top: 20px;
+
+            button {
+                background-color: $color-orange;
+                border: 0;
+                color: $color-white;
+            }
+        }
+    }
+}

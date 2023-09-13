@@ -1,0 +1,25 @@
+.dog-digest-single {
+
+    &.dalmatian {
+
+        .physical-needs-section {
+
+            #starEnergyLevel {
+                left: calc(100% - 10%)
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(80% - 10%)
+            }
+
+            #starExerciseNeeds {
+                left: calc(100% - 10%)
+            }
+
+            #starIntensity {
+                left: calc(80% - 10%)
+            }
+        }
+    }
+}
+

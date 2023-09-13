@@ -1,0 +1,96 @@
+.dog-digest-single {
+
+    &.pug {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                margin-top: -72vh !important;
+                width: 40vh !important;
+                margin-left: 28vh !important;
+                z-index: 2 !important;
+
+                @include media("<desktop") {
+                    margin-left: 28vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 80% !important;
+                    margin-left: 20% !important;
+                    margin-top: -85% !important;
+                    z-index: 1 !important;
+                }
+            }
+
+            .about-container {
+                margin-right: 28vh !important;
+
+                @include media("<desktop") {
+                    width: 40vh !important;
+                    margin-right: 28vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 95% !important;
+                    margin-right: unset !important;
+                    z-index: 2;
+                }
+
+                @include media("<phone") {
+                    width: 100% !important;
+                }
+            }
+
+            .extra-element-a-container {
+                width: 18vh;
+                top: 68vh;
+                right: 54vh;
+                z-index: 1;
+
+                @include media("<desktop") {
+                    right: 31vh;
+                    top: 57vh;
+                }
+
+                @include media("<tablet") {
+                    width: 35% !important;
+                    right: 63% !important;
+                    // margin-top: 56% !important;
+                    top: unset !important;
+                    bottom: 5%;
+                    z-index: 0 !important;
+                }
+            }
+
+            .extra-element-b-container {
+                width: 25vh;
+                top: 50vh;
+            }
+
+            .extra-element-c-container {
+                width: 15vh;
+                top: 50vh;
+            }
+        }
+
+        .physical-needs-section {
+            
+            #starEnergyLevel {
+                left: calc(40% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(100% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(40% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(80% - 10%);
+            }
+        }
+
+    }
+}

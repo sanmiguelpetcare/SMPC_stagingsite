@@ -1,0 +1,70 @@
+.dog-digest-single {
+
+    &.shiTzu {
+
+        .dog-digest-hero-section {
+
+            .extra-element-a-container {
+                
+                @include media("<tablet") {
+                    width: 22%;
+                    right: 70%;
+                    transform: scaleX(-1);
+                }
+            }
+
+            .extra-element-b-container {
+                width: 6vh;
+                top: 63vh;
+                z-index: 2;
+                left: 57vh;
+                transform: scaleX(-1);
+            }
+        }
+
+        .physical-needs-section {
+            
+            #starEnergyLevel {
+                left: calc(40% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(80% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(40% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(60% - 10%);
+            }
+        }
+
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+                align-items: center;
+
+                .recommended-products {
+                    transform: scale(0.8) !important;
+    
+                    img {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+    
+                .dog-food-A-container {
+                    margin-top: -3%;
+                    margin-right: -11%;
+                }
+    
+                .dog-food-B-container {
+                    margin-bottom: -3%;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+@keyframes appear {
+    from { 
+        width: 0;
+        overflow: hidden;
+    }
+    to {
+        width: 100%;
+        overflow: visible; 
+     }
+}
+
+.dog-digest {
+    
+    .dog-digest-hero-section {
+        background-image: url("../../../media/dog_digest/dog-digest-hero-section/hero-image.png");
+        background-position: bottom;
+        height: 400px;
+        position: relative;
+
+        .hero-image-container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                position: absolute;
+                top: 92%;
+                color: #FFFFFF;
+                font-size: 55px;
+            }
+
+            img {
+                width: 580px;
+                padding-top: 120px;
+            }
+        }
+    }
+
+    .dog-digest-content-section {
+        background-image: url("../../../media/dog_digest/dog-digest-hero-section/dog-digest-body-bg.jpg");
+        padding: 130px 0 50px 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .subheading-container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .dog-digest-content-container {
+            text-align: center;
+            max-width: 800px;
+            gap: 50px;
+            margin: auto;
+
+            .dog-digest-row-container {
+                display: flex;
+                justify-content: flex-start;
+                gap: 70px;
+                position: relative;
+                // padding-left: 30px;
+                width: 100%;
+
+                @include media("<desktop") {
+                    gap: 43px;
+                }
+                
+                .dog-icon-container {
+                    width: 150px;
+                    z-index: 99;
+                    padding: 20px;
+
+                    .dog-icon-image-container {
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        img {
+                            width: 100px;
+                        }
+                    }
+    
+                    .dog-icon-name {
+    
+                    }
+                }
+    
+                .dash-animation-container {
+                    
+                    .dash-animation-image-container {
+                        position: absolute;
+                        top: 40px;
+                        left: 0;
+                        animation-name: appear;
+                        animation-duration: 3s;
+                        animation-timing-function: ease-in-out;
+
+                        img {
+                            width: 800px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

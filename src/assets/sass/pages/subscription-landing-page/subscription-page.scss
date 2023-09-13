@@ -1,0 +1,378 @@
+.subscription-page {
+
+    .subscription-page-banner-section {
+        background-color: $color-new-blue;
+
+        .subcription-page-main-banner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 30px 0;
+
+            @include media("<desktop-bootstrap") {
+                flex-direction: column-reverse;
+            }
+
+            @include media("<tablet") {
+                padding: 40px 0;
+            }
+
+            .subscription-content-heading-container {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                color: $color-white;
+                width: 50%;
+
+                @include media("<desktop-bootstrap") {
+                    text-align: center;
+                    align-items: center;
+                }
+
+                @include media("<tablet") {
+                    width: 90%;
+                }
+
+                .subscription-content-heading {
+                    width: 80%;
+                }
+            }
+
+            .video-container {
+                background-color: $color-white;
+                border-radius: 20px;
+                height: 300px;
+                width: 50%;
+
+                @include media("<tablet") {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .subscription-content-section {
+        padding: 50px 0;
+
+        .subscription-type-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px;
+
+            @include media("<desktop-bootstrap") {
+                flex-direction: column;
+            }
+
+            @include media("<tablet") {
+                padding: 0px;
+            }
+
+            .subscription-trio-container {
+                transform: scale(.95);
+
+                @include media("<desktop-bootstrap") {
+                    transform: scale(1);
+                }
+
+                @include media("<tablet") {
+                    order: 3;
+                }
+
+                &:hover {
+                    transform: scale(1.01);
+
+                    .heading {
+
+                        .text-container {
+                            transition: all .5s ease-in-out;
+                            background-color: $color-blue;
+                        }
+                    }
+
+                    .inclussion-main-container {
+
+                        .subscription-type-button-container {
+        
+                            button {
+                                background-color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .subscription-plus-container {
+                transform: scale(.95);
+
+                @include media("<desktop-bootstrap") {
+                    transform: scale(1);
+                }
+
+                @include media("<tablet") {
+                    order: 2;
+                }
+
+
+                &:hover {
+                    transform: scale(1.01);
+
+                    .heading {
+
+                        .text-container {
+                            transition: all .5s ease-in-out;
+                            background-color: $color-blue;
+                        }
+                    }
+
+                    .inclussion-main-container {
+
+                        .subscription-type-button-container {
+        
+                            button {
+                                background-color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .subscription-max-container {
+                
+                @include media("<desktop-bootstrap") {
+                    transform: scale(1);
+                }
+
+                @include media("<tablet") {
+                    order: 1;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                    
+
+                    .heading {
+
+                        .text-container {
+                            transition: all .5s ease-in-out;
+                            background-color: $color-blue;
+                        }
+                    }
+
+                    .inclussion-main-container {
+
+                        .subscription-type-button-container {
+        
+                            button {
+                                background-color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .subscription-type-individual-container {
+                transition: all .5s ease-in-out;
+
+                @include media("<desktop-bootstrap") {
+                    margin-top: 50px;
+                }
+
+                .heading {
+                    position: relative;
+
+                    .subscription-type-logo-container {
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        top: -50px;
+                        background-color: $color-white;
+                        text-align: center;
+                        padding: 10px 0;
+                        margin-top: 30px;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 150px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        @include media("<tablet") {
+                            width: 100px;
+                            height: 100px;
+                        }
+                        
+                        
+                        img {
+                            width: 100px;
+
+                            @include media("<tablet") {
+                                transform: scale(.7)
+                            }
+                        }
+                    }
+    
+                    .text-container {
+                        background-color: $color-orange;
+                        border-radius: 20px;
+                        padding-bottom: 20px;
+                        color: $color-white;
+                        height: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        width: 350px;
+                        
+                        @include media("<desktop-bootstrap") {
+                            margin: auto;
+                        }
+
+                        @include media("<tablet") {
+                            width: 100%;
+                            height: 150px;
+                            padding: 20px;
+                        }
+
+                        .subscription-type-heading-container {
+                            text-align: center;
+                            padding: 10px 0;
+
+                        }
+        
+                        .subscription-type-subheading-container {
+                            text-align: center;
+                            padding-bottom: 10px;
+                        }    
+                    }
+                }
+
+                .inclussion-main-container {
+
+                    .inclussion-content {
+                        width: 300px;
+                        margin: auto;
+                        padding: 10px 10px 50px 10px;
+                        border-radius: 0 0 30px 30px;
+                        background-color: $color-light-gray;
+                        transition: all .5s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                        @include media("<tablet") {
+                            width: 90%;
+                        }
+                        
+                        .subscription-type-inclussion-container {
+                     
+                            ul {
+        
+                                li {
+                                   padding: 10px 0 10px 50px;
+                                   font-size: $h5-font-size;
+
+                                    @include media("<tablet") {
+                                        font-size: $h6-font-size;
+                                    }
+        
+                                    &.check {
+                                        position: relative;
+                                        
+                                        &:before {
+                                            content: "";
+                                            background-image: url(../../../media/subscription-landing-page/Check_hover.svg);
+                                            background-repeat: no-repeat;
+                                            position: absolute;
+                                            width: 30px;
+                                            height: 30px;
+                                            left: 10px;
+                                        }
+                                    }
+        
+                                    &.cross {
+                                        position: relative;
+                                        
+                                        &:before {
+                                            content: "";
+                                            background-image: url(../../../media/subscription-landing-page/Cross_normal.svg);
+                                            background-repeat: no-repeat;
+                                            position: absolute;
+                                            width: 30px;
+                                            height: 30px;
+                                            left: 10px;
+                                        }
+                                    }
+                                }
+                             }
+                        }
+        
+                        .subscription-type-payment-container {
+                            text-align: center;
+                            position: relative;
+        
+                            .payment-mode-container {
+                                border: 1px solid $color-black;
+                                width: 85%;
+                                border-radius: 10px;
+                                padding: 5px; 
+                                margin: auto;
+                                // transition: all .5s ease-in-out;
+                            }
+        
+                            p {
+                                font-size: 14px;
+                            }
+        
+                            .protect-popup-container {
+                                position: absolute;
+                                right: 65px;
+            
+                                .protect-popup-content-container {
+                                    background-color: $color-white;
+                                    border: 1px solid $color-weird-gray;
+                                    cursor: pointer;
+        
+                                    .popup-content {
+                                        padding: 10px 20px;
+                                        height: 50px;
+                                        border: 1px solid $color-weird-gray;
+        
+                                        // &:hover {
+                                        //     background-color: $color-light-gray;
+                                        // }
+            
+                                        p {
+                                           color: $color-black;
+                                        }
+                                    }
+        
+                                    &.show {
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .subscription-type-button-container {
+                        text-align: center;
+                        margin-top: -20px;
+    
+                        button {
+                            width: 60%;
+                            background-color: $color-orange;
+                            border: 0;
+                            color: $color-white;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                            @include media("<desktop-bootstrap") {
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

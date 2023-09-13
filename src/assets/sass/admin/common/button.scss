@@ -1,0 +1,17 @@
+.bttn {
+    background-color: #3899ec;
+    border: 0;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    border-radius: 50px;
+    font-size: 16px;
+    height: 45px;
+    transition: all .1s ease-in-out;
+    letter-spacing: 0;
+    padding: 0 25px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,140 @@
+// breakpoints
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 991px,
+	'desktop-bootstrap' : 1200px,
+	'hd': 1440px
+);
+
+
+
+@import "vendors/include-media";
+@import "vendors/toastr";
+
+@import "base/mixins";
+@import "base/variables";
+@import "base/typography";
+@import "base/default";
+
+@import "common/footer";
+@import "common/header";
+@import "common/navbar";
+@import "common/navbar-mobile";
+@import "common/signupButton";
+@import "common/pawprint-signupButton";
+@import "common/subscribe";
+@import "common/common-button";
+@import "common/signup-modal";
+@import "common/modal";
+@import "common/popup";
+@import "common/paw-print-logo";
+@import "common/distributor-modal";
+
+@import "pages/_homepage/homepage";
+@import "pages/homepage/homepage";
+@import "pages/nutrition/nutrition";
+@import "pages/products/products";
+@import "pages/products/single-products";
+@import "pages/paw-prints/paw-prints";
+@import "pages/privacy-policy/privacy-policy";
+@import "pages/terms-and-condition/terms-and-condition";
+@import "pages/cart=page/one-time-cart-page/one-time-cart-page";
+@import "pages/subscription-landing-page/subscription-page.scss";
+@import "pages/subscription-page/steps-accordion.scss";
+@import "pages/Pupstar/Pupstar";
+@import "pages/Pupstar/pupstar-signup";
+@import "pages/checkout-page/checkout-page";
+@import "pages/members-page/my-subscriptions";
+@import "pages/members-page/my-account";
+@import "pages/members-page/order-history";
+@import "pages/dog-digest/dog-digest";
+@import "pages/dog-digest/dog-digest-single";
+@import "pages/dog-digest/beagle";
+@import "pages/dog-digest/shih-tzu";
+@import "pages/dog-digest/german-shepherd";
+@import "pages/dog-digest/chihuahua";
+@import "pages/dog-digest/golden-retriever";
+@import "pages/dog-digest/aspin";
+@import "pages/dog-digest/siberian-husky";
+@import "pages/dog-digest/corgi";
+@import "pages/dog-digest/pug";
+@import "pages/dog-digest/mutt";
+@import "pages/dog-digest/poodle";
+@import "pages/dog-digest/dalmatian";
+@import "pages/dog-digest/labrador-retriever";
+@import "pages/dog-digest/american-bully";
+@import "pages/dog-digest/american-pit-bull-terrier";
+@import "pages/dog-digest/american-stafordshire-terrier";
+@import "pages/dog-digest/basset-hound";
+@import "pages/dog-digest/dobermann";
+@import "pages/dog-digest/great-dane";
+@import "pages/dog-digest/chow-chow";
+@import "pages/dog-digest/belgian-malinois";
+@import "pages/dog-digest/dachshund";
+@import "pages/dog-digest/pomeranian";
+@import "pages/dog-digest/american-cocker-spaniel";
+@import "pages/dog-digest/saint-bernard";
+@import "pages/dog-digest/akita-inu";
+@import "pages/dog-digest/japanese-spitz";
+@import "pages/dog-digest/shiba-inu";
+@import "pages/dog-digest/saluki";
+@import "pages/dog-digest/pharoah-hound";
+@import "pages/dog-digest/afghan-hound";
+@import "pages/dog-digest/mini-pinscher";
+
+
+@import "admin/admin";
+
+@import "modules/HompageSliderbanner";
+
+@font-face {
+	font-family: "soapy-medium";
+	src: url("../fonts/soapy/SS-Soapy-Hands-Medium.otf");	
+}
+
+@font-face {
+	font-family: "obelix";
+	src: url("../fonts/obelix/ObelixPro-cyr.ttf");	
+}
+
+.web-app {
+	padding-top: 100px;
+
+}
+
+.admin-dashboard-main-content-container {
+	padding-top: 100px;
+	overflow: auto;
+	width: calc(100vw - 250px);
+	height: 100vh;
+}
+
+.admin-dashboard {
+	background-color: $color-light-gray;
+	display: flex;
+}
+
+.dashboard-main-content-container {
+	background-color: $color-white;
+	padding: 50px;
+}
+
+body > iframe {
+	display: none;
+}
+
+.loader {
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.7);
+    z-index: 11111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}

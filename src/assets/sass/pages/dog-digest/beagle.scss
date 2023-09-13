@@ -1,0 +1,37 @@
+.dog-digest-single {
+
+    &.beagle {
+        
+        .physical-needs-section {
+
+            .physical-needs-container {
+    
+                .bar-division-container {
+    
+                    .physical-needs-bar {
+    
+                        .bar-animation {
+    
+                            #starEnergyLevel {
+                                left: calc(80% - 10%)
+                            }
+
+                            #starPotentialPlayfulness {
+                                left: calc(100% - 10%)
+                            }
+
+                            #starExerciseNeeds {
+                                left: calc(80% - 10%)
+                            }
+
+                            #starIntensity {
+                                left: calc(100% - 10%)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

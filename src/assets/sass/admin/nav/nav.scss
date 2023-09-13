@@ -1,0 +1,84 @@
+.dashboard-navbar-main-container {
+    background-color: $color-blue;
+    height: calc(100vh - 80px);
+    width: 228px;
+    left: 0;
+
+    .dashboard-navbar-container {
+        .menu-container {
+            ul {
+                padding: 20px 0;
+
+                li {
+                    color: $color-white;
+
+                    a {
+                        padding: 10px 15px 10px 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: white;
+                        border-radius: 0;
+                        font-weight: 300;
+                        transition: all .2s ease-in-out;
+                        letter-spacing: 0.3px;
+                        font-size: 14px;
+
+                        &.disabled {
+                            opacity: 0.3;
+                            pointer-events: none;
+                        }
+
+                        &.active {
+                            background-color: rgba(0, 0, 0, 0.1);
+                            font-weight: 600;
+
+                            i {
+                                font-size: 20px;
+                            }
+                        }
+
+                        i {
+                            display: block;
+                            font-size: 20px;
+                            transition: all .2s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .with-group {
+                &.active {
+                    background-color: rgba(0, 0, 0, 0.1);
+
+                    .group-container {
+                        > a {
+                            font-weight: 600 !important;
+                        }
+                    }
+                }
+
+                .group-container {
+                    > a {
+                        background-color: transparent !important;
+                    }
+                }
+                
+                ul {
+                    padding: 0;
+
+                    li {
+                        a {
+                            padding: 10px 40px;
+                            font-size: 13px;
+
+                            &.active {
+                                background-color: rgba(0, 0, 0, 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

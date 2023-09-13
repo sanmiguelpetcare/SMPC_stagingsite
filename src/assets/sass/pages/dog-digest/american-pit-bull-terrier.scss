@@ -1,0 +1,93 @@
+.dog-digest-single {
+
+    &.americanPitBullTerrier {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                width: 48vh !important;
+                margin-top: -50vh !important;
+                margin-left: 27vh !important;
+
+                @include media("<desktop") {
+                    width: 45vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 80% !important;
+                    margin-left: unset !important;
+                    margin-top: -8vh !important;
+                }
+
+                @include media("<phone") {
+                    margin-top: -4vh !important;
+                }
+            }
+
+            .about-container {
+                width: 49vh !important;
+                margin-right: 27vh !important;
+
+                h1 {
+                    font-size: 26px;
+
+                    @include media("<tablet") {
+                       font-size: 22px;
+                    }
+
+                    @include media("<phone") {
+                       font-size: 16px;
+                    }
+                }
+
+                @include media("<desktop") {
+                    width: 43vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-right: unset !important;
+                }
+            }
+        }
+
+        .physical-needs-section {
+
+            #starEnergyLevel {
+                left: calc(80% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(100% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(80% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(100% - 10%);
+            }
+        }
+
+        .grooming-section, .featured-image-section {
+
+            h2 {
+                font-size: 24px;
+
+                @include media("<desktop") {
+                   font-size: 18px;
+                }
+
+                @include media("<tablet") {
+                   font-size: 16px;
+                }
+
+                @include media("<phone") {
+                   font-size: 16px;
+                }
+            }
+        }
+    }
+}
+

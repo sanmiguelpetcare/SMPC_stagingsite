@@ -1,0 +1,28 @@
+.privacy-policy {
+    padding: 50px 0;
+
+    .privacy-policy-container {
+
+        .heading-container {
+            text-align: center;
+            padding-bottom: 50px;
+            color: $color-blue;
+        }
+
+        .main-content {
+            padding: 20px 0;
+
+            .sub-heading {
+                padding-bottom: 10px;
+            }
+
+            ol {
+                padding-top: 10px;
+
+                li {
+                    list-style-type: decimal !important;
+                }
+            }
+        }
+    }
+}

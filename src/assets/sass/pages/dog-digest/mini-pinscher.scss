@@ -1,0 +1,67 @@
+.dog-digest-single {
+
+    &.miniPinscher {
+
+        .dog-digest-hero-section {
+
+            .main-dog-container {
+                margin-bottom: -20vh;
+                margin-top: -45vh !important;
+                width: 40vh !important;
+
+                @include media("<tablet") {
+                    width: 80% !important;
+                    margin-left: unset !important;
+                    margin-top: -10vh !important;
+                    margin-bottom: -85px;
+                }
+            }
+
+            .about-container {
+                width: 48vh !important;
+
+                @include media("<desktop") {
+                    width: 41vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-right: unset !important;
+                }
+            }
+
+            .extra-element-b-container {
+                width: 15vh;
+                top: 82vh;
+                left: -5vh;
+            }
+
+            .extra-element-c-container {
+                width: 15vh;
+                top: 85vh;
+                right: -5vh;
+                transform: scaleX(-1);
+            }
+        }
+
+        .physical-needs-section {
+
+            #starEnergyLevel {
+                left: calc(80% - 10%)
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(100% - 10%)
+            }
+
+            #starExerciseNeeds {
+                left: calc(80% - 10%)
+            }
+
+            #starIntensity {
+                left: calc(60% - 10%)
+            }
+        }
+    }
+}
+

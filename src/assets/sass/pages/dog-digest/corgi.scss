@@ -1,0 +1,103 @@
+.dog-digest-single {
+
+    &.corgi {
+
+        .dog-digest-hero-section {
+            
+            .main-dog-container {
+                margin-top: -22vh !important;
+                width: 60vh !important;
+
+                @include media("<desktop") {
+                    margin-left: 5vh !important;
+                    margin-top: -20vh !important;
+                }
+
+                @include media("<tablet") {
+                    width: 100% !important;
+                    margin-left: unset !important;
+                    margin-top: -15% !important;
+                }
+            }
+
+            .about-container {
+                width: 48vh !important;
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                @include media("<desktop") {
+                    width: 40vh !important;
+                    margin-right: 23vh !important;
+
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+
+                @include media("<tablet") {
+                    width: 90% !important;
+                    margin-right: unset !important;
+
+                    h1 {
+                        font-size: 22px;
+                    }
+                }
+
+                @include media("<phone") {
+                    width: 100% !important;
+
+                    h1 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        .physical-needs-section {
+            
+            #starEnergyLevel {
+                left: calc(80% - 10%);
+            }
+
+            #starPotentialPlayfulness {
+                left: calc(80% - 10%);
+            }
+
+            #starExerciseNeeds {
+                left: calc(80% - 10%);
+            }
+
+            #starIntensity {
+                left: calc(50% - 10%);
+            }
+        }
+
+        .recommended-variants-section {
+
+            .recommended-variants-container {
+                align-items: center;
+
+                .recommended-products {
+                    transform: scale(0.8) !important;
+    
+                    img {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+    
+                .dog-food-A-container {
+                    margin-top: -3%;
+                    margin-right: -11%;
+                }
+    
+                .dog-food-B-container {
+                    margin-bottom: -3%;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,92 @@
+#admin-dashboard {
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    letter-spacing: 0;
+    font-size: 16px;
+
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 28px;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .dashboard-main-container {
+        background-color: $color-white;
+        padding: 50px;
+    }
+
+    #dashboard-content {
+        width: 100%;
+        display: flex;
+    }
+
+    .dashboard-main-content-container {
+        background-color: transparent;
+    }
+
+    .admin-dashboard-main-content-container {
+        padding: 30px 35px;
+        background: #f0f4f7;
+        width: calc(100vw - 228px);
+        height: calc(100vh - 80px);
+    }
+
+    h1 {
+        letter-spacing: 0;
+    }
+
+    .initials {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #32536A;
+        color: white;
+        margin-right: 15px;
+        text-transform: uppercase;
+    }
+
+    .imagedef {
+        width: 60px;
+        height: 60px;
+        background-color: #DDD;
+        margin-right: 20px;
+    }
+
+    .main-content {
+        transition: all .3s ease-in-out;
+
+        &.loading {
+            filter: blur(5px);
+        }
+    }
+
+    @import "products/products";
+    @import "members/members";
+    @import "nav/nav";
+    @import "header/header";
+
+    @import "common/common";
+    @import "common/checkbox";
+    @import "common/button";
+    @import "common/dropdown";
+    @import "common/modal";
+    @import "common/form";
+    @import "common/list";
+    @import "common/delete-modal";
+
+    @import "analytics/analytics";
+    @import "distributor/distributor";
+    @import "orders/orders";
+    @import "login/login";
+}

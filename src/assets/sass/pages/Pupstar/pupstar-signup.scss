@@ -1,0 +1,75 @@
+.pupstar-signup {
+    padding: 50px 0;
+
+    .pupstar-content-container {
+        display: flex;
+        justify-content: space-around;
+    
+        .form-main-container {
+            width: 50%;
+    
+            button {
+            }
+    
+            .form-container {
+    
+                .heading-container {
+    
+                    p {
+                        padding: 15px 0;
+                    }
+    
+                    h2 {
+                        font-family: "obelix";
+                        color: $color-blue;
+                        
+                        span {
+                            color: $color-orange;
+                        }
+                    }
+                }
+
+                .field-container {
+                    margin: 20px 0;
+
+                    p {
+                        padding-bottom: 5px;
+                    }
+
+                    input {
+                        border: 1px solid $color-lower-gray;
+                        width: 100%;
+                        height: 50px;
+                    }
+
+                    .age-field {
+                        border: 1px solid $color-lower-gray;
+                        width: 100%;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    
+        .image-content {
+            width: 30%;
+            text-align: center;
+    
+            .head {
+                padding-bottom: 25px;
+                color: $color-blue;
+                ;
+                h4 {
+                    font-family: "obelix";
+                }
+            }
+    
+            .image-container {
+    
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

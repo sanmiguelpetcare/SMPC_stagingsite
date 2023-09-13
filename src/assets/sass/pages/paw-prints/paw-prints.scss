@@ -1,0 +1,384 @@
+.paw-prints {
+    background-color: $color-light-brown;;
+
+    .paw-prints-hero-banner-section {
+        padding: 50px 0;
+        margin-bottom: 90px;
+        background-image: url("../../../media/paw-prints/sky_bg.png");
+        background-position: center;
+
+        .paw-prints-hero-img-container {
+            text-align: center;
+
+            img {
+                width: 100%;
+                max-width: 550px;
+            }
+
+            h3 {
+                padding: 40px;
+                font-family: $quick-sand;
+                color: $color-brown;
+
+                @include media("<tablet") {
+                    padding: 20px 10px;
+                }
+            }
+        }
+
+        @include media("<tablet") {
+            margin-bottom: 0;
+        }
+    }
+
+    .paw-prints-scroll-section {
+        padding-bottom: 150px;
+
+        @include media("<tablet") {
+            padding-bottom: 10px;
+        }
+
+        .scroll-section-container {
+
+            .scroll-image-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include media("<tablet") {
+                    padding: 20px;
+                }
+
+                img {
+                    max-width: 800px;
+                    
+                    @include media(">tablet") {
+                        width: 100%;
+                    }
+
+                    @include media("<tablet") {
+                        max-width: 650px;
+                    }
+                }
+
+                .program-icons-container {
+                    position: absolute;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    @include media("<tablet"){
+                        align-items: baseline;
+                    }
+
+                    .scroll-content {
+                        max-width: 180px;
+                        
+                        @include media("<tablet"){
+                            max-width: 120px;
+                        }
+
+                        img {
+                            width: 100%;
+                            max-width: 90px;
+
+                            
+                            @include media("<tablet") {
+                                max-width: 50px;
+                            }
+                        }
+                        
+                        h4 {
+                            font-family: $lucky !important;
+                            color: $color-brown;
+                            padding: 10px 0;
+                        }
+    
+                        p {
+                            font-weight: $fw-bold;
+                            color: $color-brown;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .paw-prints-join-us-section {
+        background-image: url("../../../media/paw-prints/join_us_bg.png");
+        background-repeat: no-repeat;
+        padding: 10px 0;
+
+        @include media("<tablet") {
+            background-position: center;
+            background-size: auto 100%;
+        }
+
+        .paw-prints-join-us-container {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+            gap: 50px;
+
+            @include media("<tablet") {
+                gap: 0px;
+            }
+            
+            .join-us-image-bulletin-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .join-us-image-bulletin {
+
+                    img {
+                        max-width: 400px;
+
+                        @include media("<tablet") {
+                            max-width: 200px;
+                        }
+                    }
+                }
+
+                .join-us-image-bulletin-content {
+                    position: absolute;
+                    max-width: 300px;
+                    margin-top: 70px;
+                    margin-left: 10px;
+
+                    @include media("<tablet") {
+                        max-width: 150px;
+                        margin-top: 30px;
+                    }
+
+                    h3 {
+                        font-weight: $fw-semi-bold;
+                        color: $color-brown;
+
+                        @include media("<tablet") {
+                            font-size: $h6-font-size-mobile;
+                        }
+                    }
+                }
+            }
+
+            .chunky-image-container {
+                margin-left: -100px;
+                
+                @include media("<tablet") {
+                    z-index: 1;
+                    margin-left: -60px;
+                }
+
+                img {
+                    width: 450px;
+
+                    @include media("<tablet") {
+                        max-width: 250px;
+                        margin-right: -65px;
+                    }
+                }
+            }
+        }
+    }
+
+    .paw-prints-ways-to-earn-section {
+        background-image: url("../../../media/paw-prints/earn_bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+
+        @include media("<tablet") {
+            padding: 0;
+            background-position: center;
+            background-size: auto 100%;
+        }
+
+        .paw-prints-ways-to-earn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            
+            .map-image-container {
+
+                @include media("<tablet") {
+                   margin-left: -30px;
+                   z-index: 1;
+                }
+
+                img {
+                    max-width: 400px;
+    
+                    @include media("<tablet") {
+                        max-width: 150px;
+                    }
+                } 
+            }
+
+            .ways-to-earn-bulletin-container {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 400px;
+
+                    @include media("<tablet") {
+                        max-width: 280px;
+                    }
+                }
+
+                .ways-to-earn-content-container {
+                    position: absolute;
+                    padding-top: 100px;
+                    padding-left: 20px;
+
+                    .ways-to-earn-content {
+                        padding: 5px 0;
+                        text-align: center;
+
+                        @include media("<tablet") {
+                            padding: 2px 0;
+                            max-width: 240px;
+                         }
+
+                        h5 {
+                            font-family: $lucky;
+                            letter-spacing: 0.1em;
+                            color: $color-brown;
+
+                            @include media("<tablet") {
+                               font-size: $h6-font-size-mobile
+                            }
+                        }
+
+                        p {
+                            color: $color-brown;
+                            font-weight: $fw-semi-bold;
+                            max-width: 200px;
+                            margin: auto;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .paw-prints-ways-to-claim-section {
+        background-image: url("../../../media/paw-prints/claim_bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 0 150px 0;
+        
+        @include media("<tablet") {
+            padding: 40px 0 0 0;
+            background-position: center;
+            background-size: auto 100%;
+        }
+
+        .paw-prints-ways-to-claim-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .treasure-chest-container {
+
+                @include media("<tablet") {
+                    z-index: 1;
+                }
+
+                img {
+                    max-width: 300px;
+    
+                    @include media("<tablet") {
+                        max-width: 200px;
+                    }
+                }
+            }
+
+            .ways-to-claim-bulletin-container {
+                display: flex;
+                position: relative;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                @include media("<tablet") {
+                    margin-left: -60px;
+                 }
+
+                img {
+                    max-width: 350px;
+
+                    @include media("<tablet") {
+                        max-width: 250px;
+                    }
+                }
+
+                .ways-to-claim-content-container {
+                    position: absolute;
+                    margin: 80px 0 0 20px;
+
+                    .ways-to-earn-content {
+                        padding: 5px 0;
+                        text-align: center;
+
+                        @include media("<tablet") {
+                            padding: 2px 0;
+                            max-width: 240px;
+                         }
+
+                        h5 {
+                            font-family: $lucky;
+                            letter-spacing: 0.1em;
+                            color: $color-brown;
+
+                            @include media("<tablet") {
+                               font-size: $h6-font-size-mobile
+                            }
+                        }
+
+                        p {
+                            color: $color-brown;
+                            font-weight: $fw-semi-bold;
+                            max-width: 200px;
+                            margin: auto;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .paw-prints-termscondition-section {
+        margin: auto;
+        max-width: 800px;
+        text-align: center;
+        padding: 40px 0;
+
+        @include media("<tablet") {
+            padding-top: 40px;
+         }
+
+        h6 {
+            color: $color-brown;
+            font-weight: $fw-bold;
+        }
+
+        p {
+            padding: 10px 0;
+            color: $color-brown;
+            font-weight: $fw-bold;
+        }
+    }
+}

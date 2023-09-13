@@ -1,0 +1,67 @@
+.signup-button-container-nav {
+
+    button {
+        color: $color-white !important;
+        padding: 5px 15px;
+        border-radius: 100px;
+        border: 0;
+        background-color: $color-orange;
+        font-size: $h6-font-size;
+        font-weight: $fw-semi-bold;
+        border: 2px solid $color-orange;
+
+        &:hover {
+            // border: 2px solid $color-orange;
+            background-color: $color-white;
+            color: $color-orange !important;
+        }
+    }
+}
+
+.user-button {
+    font-weight: bold;
+    color: $color-blue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-icon {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.dropdown-list {
+    cursor: pointer;
+    font-weight: $fw-medium;
+    white-space: nowrap;
+
+    &:hover {
+        color: $color-black;
+    }
+}
+
+.logout-button {
+    color: $color-dark-gray;
+}
+
+.account-icon {
+    margin-top: 5px;
+}
+
+// .login-button-container {
+    
+//     button {
+
+//         &.signup {
+//             color: $color-blue !important;
+//             border: none;
+//             font-family: 'Montserrat', sans-serif;
+//             font-weight: $fw-bold;
+//             font-size: $h6-font-size !important;
+//             padding: 5px;
+
+//         }
+//     }
+// }

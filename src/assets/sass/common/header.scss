@@ -1,0 +1,205 @@
+.header {
+    height: 98.11px;
+    display: flex;
+    align-items: center;
+
+    &.is-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 1px 8px 1px rgb(0 0 0 / 5%);
+        background-color: #ffffff !important;
+        // animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+        transition: all .5s;
+    }
+
+    &.disappear {
+        transform: translateY(-100px);
+
+        @include media("<tablet") {
+            transform: translateY(0)
+        }
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding-top: 20px;
+        // padding-bottom: 20px;
+        max-width: 1200px;
+        margin: auto;
+
+       .main-logo-container {
+    
+            img {
+                max-width: 80px;
+
+                @include media("<phone") {
+                    max-width: 60px;
+                }
+            }
+       }
+    
+       .nav-list-container {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+
+            .navbar-list {
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        font-weight: $fw-semi-bold;
+                        color: $color-dark-gray;
+                        cursor: pointer;
+                        transition: all .2s ease-in-out;
+                        padding: 5px 15px;
+                        margin: 1px;
+                        border-radius: 10px;
+
+                        &:hover {
+                            color: $color-black;
+                        }
+    
+                        &.active {
+                            color: $color-blue !important;
+                            font-weight: $fw-bolder;
+                            // padding: 5px 15px;
+                            // background-color: $color-blue;
+                            // border-radius: 10px;
+
+                            .active-bar {
+                                display: block;
+                                margin: auto;
+                                width: 80%;
+                                height: 2px;
+                                background-color: $color-blue;
+                                border-radius: 2px;
+                            }
+                        }
+                    }
+                }
+
+                @include media("<desktop") {
+                    justify-content: space-between;
+                    display: none;
+                }
+
+                .product-nav-container {
+                    position: relative;
+
+                    li {
+                        font-weight: $fw-semi-bold;
+                        color: $color-dark-gray;
+                        cursor: pointer;
+                        transition: all .2s ease-in-out;
+                        padding: 5px 15px;
+                        margin: 1px;
+                        border-radius: 10px;
+
+                        &.active {
+                            color: $color-white !important;
+                            padding: 5px 15px;
+                            background-color: $color-blue;
+                            border-radius: 10px;
+                        }
+                    }
+        
+                    .popup-container {
+                        opacity: 0;
+                        display: none;
+                        transition: all .2s ease-in-out;
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        background-color: $color-white;
+                        border-radius: 15px;
+
+                        .popup-content-container {
+                            flex-direction: column;
+                            display: flex;
+                            
+
+                            a { 
+                                // background-color: $color-white !important;
+                                font-family: $quick-sand;
+                                padding: unset;
+                                color: $color-dark-gray;
+                                border-radius: 10px !important;
+                                padding: 5px 10px;
+
+                                &.disabled {
+                                    color: $color-input-gray !important;
+                                    cursor: not-allowed;
+
+                                    &:hover {
+                                        background-color: $color-white;
+                                        pointer-events: none;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $color-darker-gray;
+                                    background-color: $color-input-gray;
+                                    border-radius: 5px;
+                                }
+
+                                &.active {
+                                    color: $color-blue !important;
+                                    background-color: $color-input-gray;
+                                    border-radius: 5px;
+                                }
+
+                                &.disabled {
+                                    color: $color-input-gray !important;
+                                }
+                            }
+                        }
+                    }
+        
+                    &:hover {
+                        color: $color-blue;
+
+                        .popup-container {
+                            opacity: 1;
+                            display: block;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
+            @include media("<desktop") {
+                flex-direction: row-reverse;
+            }
+
+            .burger-icon-container {
+                display: none;
+                z-index: 15;
+            }
+
+            .signup-component-display {
+                position: relative;
+
+                .logged-on-dropdwon {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: absolute;
+                    background: $color-white;
+                    padding: 10px 12px;
+                    border-radius: 4px;
+                    right: 0;
+                    box-shadow: 0 0 1px 1px #f5f5f5;
+                }
+            }
+        }
+    }
+}

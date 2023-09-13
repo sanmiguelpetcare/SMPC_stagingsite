@@ -1,0 +1,717 @@
+
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-lighter-gray; 
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $color-darker-gray; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.signup-container {
+    // margin: 50px 0;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+
+    @include media("<tablet") {
+        height: auto;
+        align-items: flex-start;
+        margin: 20px 0 30px 0;
+    }
+
+    .signup-main-container {
+        // margin-top: -80px;
+        
+        .signup-content-main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            @include media("<tablet") {
+                display: block;
+            }
+
+            .join-pawmily-container {
+                transform: rotate(-5deg);
+                position: relative;
+                width: 40%;
+                margin-right: -45px;
+                z-index: 1;
+
+                @include media("<desktop") {
+                    display: none;
+                }
+
+                .katrin {
+                    width: 100%;
+                    transform: scale(1.1);
+                    margin-top: -3%;
+
+                    @include media("<tablet") {
+                        margin-top: 0;
+                    }
+    
+                }
+    
+                .pawmily {
+                    position: absolute;
+                    left: 10px;
+                    width: 70%;
+                    top: 0;
+                    z-index: 0;
+                }
+            }
+    
+            .signup-content-container {
+                padding: 25px 50px 25px 80px;
+                background-color: $color-light-gray;
+                border-radius: 40px;
+                width: 75%;
+                z-index: 0;
+        
+                @include media("<desktop") {
+                    padding: 50px 20px;
+                    margin: auto;
+                    width: 90%;
+                }
+        
+                @include media("<tablet") {
+                    padding: 19px 20px;
+                    width: 100%;
+                    // padding-top: 100px;
+                    // margin-top: -80px;
+                    border-radius: 20px;
+                }
+                
+                .signup-heading {
+                    padding-bottom: 30px;
+        
+                    @include media("<tablet") {
+                        padding-bottom: 8px;
+                    }
+            
+                    .create-an-acoount-container {
+                        color: $color-blue;
+                    }
+            
+                    .already-member-container {
+                        display: flex;
+                        padding: 5px 0;
+                        align-items: center;
+
+                        .login-button {
+                            background-color: $color-orange;
+                            border-radius: 20px;
+                            padding: 5px 12px;
+                            margin-left: 10px;
+                            cursor: pointer;
+
+                            h6 {
+                                color: $color-white;
+                                font-family: $montser;
+                                font-weight: $fw-bold;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                            }
+                        }
+            
+                        h6 {
+                            font-weight: $fw-medium;
+                            font-family: $quick-sand;
+                        }
+                    }
+                }
+            
+                .main-form-container {
+            
+                    .field-container {
+                        position: relative;
+                        width: 100%;
+                        padding: 10px 0;
+
+                        @include media("<tablet") {
+                            padding: 6px 0;
+                        }
+
+                        select {
+                            position: relative;
+                            margin-top: 5px;
+                            width: 100%;
+                            height: 45px;
+                            border: none;
+                            background-color: $color-input-gray;
+                            padding: 12px;
+                            border-radius: 12px;
+                            appearance: none;
+
+                            .select-region {
+                                color: $color-dark-gray;
+                                opacity: 0.8;
+                            }
+
+                            option:first {
+                                color: $color-input-gray;
+                            }
+                        }
+
+                        .email-signup {
+                            text-transform: unset !important;
+                        }
+                        
+                        .signup-input {
+                            position: relative;
+                            margin-top: 5px;
+                            width: 100%;
+                            height: 45px;
+                            border: none;
+                            background-color: $color-input-gray;
+                            padding: 12px;
+                            border-radius: 12px;
+                            // text-transform: uppercase;
+                        }
+
+                        .signup-input:focus {
+                            background-color: $color-light-gray;
+                        }
+
+                        .signup-input::placeholder,
+                        .ant-select-selection-placeholder {
+                            color: $color-dark-gray;
+                            opacity: 0.8;
+                        }
+
+                        .signup-input::-webkit-outer-spin-button,
+                        .signup-input::-webkit-inner-spin-button
+                        {   
+                            appearance: none;
+                            margin: 0;
+                        }
+
+                        // .error {
+                        //     font-family: $quick-sand;
+                        //     position: absolute;
+                        //     width: 100%;
+                        //     left: 10px;
+                        //     top: 62px;  
+
+                        //     i {
+                        //         margin-right: 5px;
+                        //     }
+
+                        //     @include media("<tablet") {
+                        //         top: 57px;
+                        //         font-size: x-small;
+                        //     }
+                        // }
+
+                        .haserror {
+                            border: 2px solid $color-red; // #ae3434;
+                            // background-color: rgba(244, 0, 0, 0.06);
+                        }
+
+                        .ant-select {
+                            margin-top: 5px;
+                            width: 100%;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .ant-select-selector {
+                            height: 41px;
+                            border: none;
+                            background-color: transparent;
+                            padding: 0;
+                            border-radius: 12px;
+                        
+                            .ant-select-selection-search {
+                                inset-inline-start: unset;
+                                inset-inline-end: unset;
+                                width: 100%;
+                            
+                                .ant-select-selection-search-input {
+                                    height: 41px;
+                                    background-color: transparent;
+                                    border-radius: 10px;
+                                    padding: 0 11px;
+                                    
+                                    &:focus {
+                                        outline: 2px solid $color-new-blue;
+                                    }
+                                }
+                            }   
+                            
+                            .ant-select-selection-item,
+                            .ant-select-selection-placeholder {
+                                padding: 6px 12px;
+                                font-weight: $fw-light;
+                            }
+                        }  
+
+                        .search-bar {
+                            z-index: 1;
+                        }
+
+                        .dropdown-option{
+                            position: absolute;
+                            top: 0px;
+                            z-index: 1;
+                            width: 100%;
+
+                            .province-list {
+                                background-color: $color-white;
+                                border-radius: 15px;
+                                max-height: 140px;
+                                overflow-y: scroll;
+                                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+                                padding: 10px;
+                                color: $color-dark-gray;
+
+                                input {
+                                    margin-bottom: 2px;
+                                }
+
+                                option {
+                                    font-size: 14px;
+                                    font-weight: $fw-regular;
+                                    margin: 3px;
+                                    transition: 0.3s all ease;
+
+                                    &:hover {
+                                        color: $color-blue;
+                                        font-weight: $fw-semi-bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            
+                    .form-container {
+            
+                        .personal-details-container {
+            
+                            .personal-details-heading-container {
+                                color: $color-orange;
+                                margin-bottom: 5px;
+                            }
+            
+                            .personal-details-content-container {
+                                display: flex;
+                                gap: 20px;
+
+                                @include media("<tablet") {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 0;
+                                }
+
+                                #personal-details {
+                                    width: 35%;
+
+                                    @include media("<tablet") {
+                                        width: 100%;
+                                    }
+                                }
+
+                                #shipping-details {
+                                    width: 65%;
+                                    
+                                    @include media("<tablet") {
+                                        width: 100%;
+                                    }
+                                }
+            
+                                .personal-details-form-container {
+                                    // display: flex;
+                                    justify-content: center;
+                                    // gap: 40px;
+                                    width: 100%;
+        
+                                    @include media("<tablet") {
+                                        display: block
+                                    }
+        
+                                    .personal-details-form-sub-container {
+                                        width: 100%;
+        
+                                        .field-container {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+            
+                        .furbaby-details-container {
+            
+                            .furbaby-details-heading-container  {
+                                color: $color-orange;
+                            }
+            
+                            .furbaby-details-form-container {
+                                display: flex;
+            
+                                .field-container {
+                                    margin: 25px 10px 0 0;
+                                }
+                            }
+                        }
+                    }
+            
+                    .submit-button-container {
+                        text-align: center;
+                        margin: 20px 0;
+                    }
+                }
+        
+                .furbaby-details-container {
+                    // padding-top: 30px;
+                     
+                    .furbaby-details-heading-container {
+                        width: 100%;
+                        color: $color-orange;
+        
+                        @include media("<tablet") {
+                            // padding-top: 30px;
+                            width: 100%;
+                        }
+                    }
+        
+                    .furbaby-details-form-container {
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        height: 522px;
+                        overflow-y: scroll;
+                        scroll-snap-type: y mandatory;
+                        scroll-behavior: smooth;
+        
+                        @include media("<tablet") {
+                            width: 100%;
+                        }
+        
+                        .furBaby-details-container {
+                            display: flex;
+                            width: 98%;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            gap: 4%;
+                            margin-top: 10px;
+                            margin-bottom: 209px;
+
+                            @include media("<desktop") {
+                                margin-bottom: 218px;
+                            }
+
+                            @include media("<tablet") {
+                                margin-bottom: 54px;
+                                flex-direction: column;
+                                width: 100%;
+                                align-items: center;
+                            }
+
+                            @include media("<phone") {
+                                margin-bottom: 77px;
+                            }
+                            
+                            .field-detials-container {
+                                width: 48%;
+                                display: flex;
+                                flex-direction: column;
+
+                                @include media("<tablet") {
+                                    width: 95%;
+                                }
+
+                                p {
+                                    font-weight: $fw-semi-bold;
+                                    color: $color-darker-gray;
+                                }
+
+                                .dog-breed-container, 
+                                .dog-food-container-dropdown {
+                                    position: relative;
+
+                                    // &:after {
+                                    //     content: "" !important;
+                                    //     position: absolute !important;
+                                    //     top: 55px !important;
+                                    //     right: 15px !important;
+                                    //     border: solid #8F8F8F !important;
+                                    //     border-width: 0px 2px 2px 0 !important;
+                                    //     display: inline-block !important;
+                                    //     padding: 3px !important;
+                                    //     transform: rotate(45deg) !important;
+                                    // }
+                                }
+                            }
+        
+                            .field-container {
+                                padding: 10px 5px;
+                                width: 100%;
+        
+                                button {
+                                    text-transform: uppercase;
+                                    color: $color-white;
+                                    font-size: 16px;
+                                    border: 0px;
+                                    margin: 8px 5px;
+                                    // padding: 5px 15px;
+                                    transition: all 0.3s ease;
+
+                                    &:hover {
+                                        transform: scale(1.08);
+                                    }
+                                }
+        
+                                .signup-input, select {
+                                    // margin: 5px 5px 0px 5px;
+                                    margin-top: 5px;
+                                    width: 100%;
+                                    height: 45px;
+                                    border: none;
+                                    background-color: $color-input-gray;
+                                    padding: 12px;
+                                    border-radius: 12px;
+                                    // text-transform: uppercase;
+                                }
+
+                                select {
+                                    appearance: none;
+                                    // text-transform: uppercase;
+                                }
+        
+                                input:focus {
+                                    background-color: $color-light-gray;
+                                }
+        
+                                input::placeholder,
+                                .ant-select-selection-placeholder {
+                                    color: $color-dark-gray;
+                                    opacity: 0.7;
+                                }
+
+                                .ant-select {
+                                    margin-top: 5px;
+                                    width: 100%;
+                                }
+
+                                .ant-select-selector {
+                                    height: 45px;
+                                    border: none;
+                                    background-color: rgb(229, 229, 229);
+                                    padding: 0;
+                                    border-radius: 12px;
+                                    background-color: #e5e5e5;
+                                    border: none;
+                                
+                                    .ant-select-selection-search {
+                                        inset-inline-start: unset;
+                                        inset-inline-end: unset;
+                                        width: 100%;
+                                    
+                                        .ant-select-selection-search-input {
+                                            height: 45px;
+                                            background-color: transparent;
+                                            border-radius: 12px;
+                                            padding: 0 12px;
+                                            
+                                            &:focus {
+                                                border: 2px solid $color-new-blue;
+                                            }
+                                        }
+                                    }   
+                                    
+                                    .ant-select-selection-item,
+                                    .ant-select-selection-placeholder {
+                                        padding: 6px 12px;
+                                        font-weight: $fw-light;
+                                    }
+                                }  
+
+                                .dog-cat-container {
+                                    display: flex;
+                                    justify-content: center;
+
+                                    @include media("<tablet") {
+                                        justify-content: flex-start;
+
+                                        button {
+                                            margin: 5px 10px 0px 10px;
+                                        }
+                                    }
+
+                                    .answer {
+                                        margin-top: 5px;
+                                        width: 100%;
+                                        height: 45px;
+                                        border: none;
+                                        background-color: $color-input-gray;
+                                        padding: 12px;
+                                        border-radius: 12px;
+                                    }
+        
+                                    .dog-cat-category {
+                                        border: 1px solid $color-dark-gray;
+                                        background-color: $color-white;
+        
+                                            .dog-cat-list-container {
+                                                padding: 8px 10px;
+                                                width: 100%;
+        
+                                                &:hover {
+                                                    background-color: $color-light-gray;
+                                                }
+                                            }
+                                    }
+                                }
+        
+                                .dog-food-container {
+        
+                                    .answer {
+                                        margin-top: 5px;
+                                        width: 100%;
+                                        height: 45px;
+                                        border: none;
+                                        background-color: $color-input-gray;
+                                        padding: 12px;
+                                        border-radius: 12px;
+                                    }
+        
+                                    .dog-food-category {
+                                        border: 1px solid $color-dark-gray;
+                                        background-color: $color-white;
+        
+                                            .dog-food-list-container {
+                                                padding: 8px 10px;
+                                                width: 100%;
+        
+                                                &:hover {
+                                                    background-color: $color-light-gray;
+                                                }
+                                            }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .add-remove-container {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        color: $color-dark-gray;
+                        font-size: 14px;
+                        cursor: pointer;
+
+                        p {
+                            font-size: 14px;
+                            font-weight: $fw-semi-bold;
+                        }
+                    }
+                }
+        
+                .back-button {
+                    border: 0;
+                    background-color: transparent;
+                    color: $color-lighter-gray;
+                    font-size: $h6-font-size;
+        
+                    @include media("<tablet") {
+                    }
+                }
+
+                .hidden {
+                    display: none;
+                }
+
+                .button-containers {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 15px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .submit-button-container {
+        text-align: end;
+        // margin-top: 20px;
+
+        button {
+            background-color: $color-orange;
+            color: $color-white;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 100px;
+
+            @include media("<tablet") {
+                width: 100%;
+            }
+
+            &:hover {
+                background-color: $color-blue;
+                border: none;
+            }
+        }
+    }
+
+    .blurred-kibble {
+        position: absolute;
+        z-index: -2;
+    }
+
+    #blurred-kibble-a {
+        right: 160px;
+        top: 35px;
+        width: 13%;
+    }
+
+    #blurred-kibble-b {
+        right: 15px;
+        top: 725px;
+        width: 12%;
+    }
+    
+    #blurred-kibble-c {
+        left: -100px;
+        top: 590px;
+        width: 17%;
+    }
+
+    .error {
+        font-family: $quick-sand;
+        position: absolute;
+        width: 100%;
+        left: 10px;
+        top: 62px;  
+
+        i {
+            margin-right: 5px;
+        }
+
+        @include media("<tablet") {
+            top: 57px;
+            font-size: x-small;
+        }
+    }
+
+}

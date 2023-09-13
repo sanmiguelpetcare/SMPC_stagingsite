@@ -1,0 +1,160 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $fw-bold;
+    font-size: $h1-font-size;
+
+    @include media("<desktop") {
+        font-size: $h1-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h1-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h1-font-size-xs-mobile;
+    }
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $h2-font-size;
+    font-weight: $fw-bold;
+
+    @include media("<desktop") {
+        font-size: $h2-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h2-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h2-font-size-xs-mobile;
+    }
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $h3-font-size;
+    font-weight: $fw-bold;
+
+    @include media("<desktop") {
+        font-size: $h3-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h3-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h3-font-size-xs-mobile;
+    }
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $h4-font-size;
+    font-weight: $fw-bold;
+
+    @include media("<desktop") {
+        font-size: $h4-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h4-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h4-font-size-xs-mobile;
+    }
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $h5-font-size;
+    font-weight: $fw-bold;
+
+    @include media("<desktop") {
+        font-size: $h5-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h5-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h5-font-size-xs-mobile;
+    }
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $h6-font-size;
+    font-weight: $fw-bold;
+
+    @include media("<desktop") {
+        font-size: $h6-font-size-tablet;
+    }
+
+    @include media("<tablet") {
+        font-size: $h6-font-size-mobile;
+    }
+
+    @include media("<phone") {
+        font-size: $h6-font-size-xs-mobile;
+    }
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+
+    @include media("<desktop") {
+        font-size: 14px;
+    }
+
+    @include media("<tablet") {
+        font-size: 13px;
+    }
+
+    @include media("<phone") {
+        font-size: 10px;
+    }
+}
+
+li {
+    font-size: 16px;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+
+    @include media("<desktop") {
+        font-size: 14px;
+    }
+
+    @include media("<tablet") {
+        font-size: 13px;
+    }
+
+    @include media("<xs-phone") {
+        font-size: 10px;
+    }
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: $fw-semi-bold;
+    color: $color-blue;
+}
+
+input {
+    font-family: $quick-sand;
+    font-size: 14px;
+}
+
+select {
+    font-family: $quick-sand;
+    font-size: 14px;
+}
+
+
