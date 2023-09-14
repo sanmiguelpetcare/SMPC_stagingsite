@@ -71,7 +71,7 @@
     "react-slick": "^0.29.0",
     "react-transition-group": "^4.4.5",
     "react-widgets": "^5.8.4",
-    "redux": "^4.2.0",
+    "redux": "^4.2.1",
     "redux-thunk": "^2.4.1",
     "select-philippines-address": "^1.0.6",
     "sequelize": "^6.21.4",
