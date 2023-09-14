@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@apideck/better-ajv-errors": "^0.3.6",
+    "@babel/core": "^7.22.19",
     "@emailjs/browser": "^3.9.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
