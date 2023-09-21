@@ -3,10 +3,8 @@ import React, { useState } from 'react';
 import Request from "config/API";
 import Tokenized from "config/Tokenized";
 import { ReduxConnect } from "helpers/HOC";
-// import swell from 'swell-js';
 
 const LoginModal = (props) => {
-    // swell.init("nutri-chunks-pawmily", "pk_p2aI2WSztUyecuubPrt5xrM1x6lEfepy")
 
     const [error, setError] = useState(false)
     const [data, setLoginData] = useState({
@@ -182,47 +180,7 @@ const LoginModal = (props) => {
                 user: gtoken.token
             };
 
-            // var acc = await swell.account.login(data.form.email.value, data.form.password.value)
-            // if (acc !== null) {
-            //     console.log("Successfully Logged In --- \n", acc)
-            //     props.fe_user_actions.setLoggedUser(acc);
-            //     props.common_actions.updateLoading(false);
-
-            //     if(props.fe_user_actions.setLoggedUser) {
-            //         props.fe_user_actions.setLoggedUser(acc);
-            //         console.log(acc)
-
-            //         localStorage.setItem('token_id', gtoken.id);
-            //         localStorage.setItem('logged_user', gtoken.token);
-    
-            //         props.handleClose();
-            //     }
-            // }
-            // else {
-            //     console.log("Failed to Login. --- \n", acc);
-            //     props.common_actions.updateLoading(false);
-            //     props.handleClose();
-            // }
-
-                // .then(async res => {
-                //     if (res !== null) {
-                //         console.log("Successfully Logged In --- \n", res)
-                //         props.fe_user_actions.setLoggedUser(res);
-                //         props.common_actions.updateLoading(false);
-                //         props.handleClose();
-                //     }
-                //     else {
-                //         console.log("Failed to Login. --- \n", res);
-                //         props.common_actions.updateLoading(false);
-                //         props.handleClose();
-                //     }
-                // })
-                // .catch(err => {
-                //     console.log("Login Error --- \n", err);
-                //     props.common_actions.updateLoading(false);
-                //     console.log(err)
-                //     // window.location.href = "/signup";
-                // })
+           
 
             Request().post(`/user/login/${gtoken.id}`, params)
                 .then(response => {

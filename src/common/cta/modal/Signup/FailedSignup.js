@@ -1,7 +1,6 @@
 import Modal from '@mui/material/Modal';
 import React from 'react';
 import Request from "config/API";
-import swell from 'swell-js'
 import Tokenized from "config/Tokenized";
 import { ReduxConnect } from "helpers/HOC";
 
