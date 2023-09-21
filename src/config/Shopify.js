@@ -1,6 +1,6 @@
-import { Shopify } from "@shopify/shopify-api";
-import createApp from "@shopify/app-bridge"
-import { getSessionToken } from "@shopify/app-bridge-utils";
+// import { Shopify } from "@shopify/shopify-api";
+// import createApp from "@shopify/app-bridge"
+// import { getSessionToken } from "@shopify/app-bridge-utils";
 
 // const app = createApp({
 //     apiKey: "58e26756c4f2ebe2f5a7a2dcdb560627",

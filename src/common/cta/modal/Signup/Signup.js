@@ -15,7 +15,7 @@ import Modal from "../Modal";
 import React from "react";
 import Request from "config/API";
 import SignupModal from "./SignupModal"
-import shopifyApi from "config/Shopify";
+// import shopifyApi from "config/Shopify";
 import Tokenized from "config/Tokenized";
 
 
