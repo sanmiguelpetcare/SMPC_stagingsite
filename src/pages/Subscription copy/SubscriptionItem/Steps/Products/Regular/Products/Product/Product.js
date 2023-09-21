@@ -11,7 +11,7 @@ const Product = (props) => {
 
     const onSelect = () => {
         // console.log( product );
-        if( productQty == 0 ) {
+        if( productQty === 0 ) {
             props.fe_subscription_actions.updateRegularQtys({
                 product: { ...product, qty: 1 },
                 total: total + ( product.price )

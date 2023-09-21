@@ -73,12 +73,12 @@ export default function SubscriptionAnimation(props) {
 
 
     const animationContentIdentifier = () => {
-      if(props.deliveryOption == 1) {
+      if(props.deliveryOption === 1) {
             return <RegularAnimation 
                         selectedImage={selectedProductList}
                     />
         
-      } else if(props.deliveryOption == 2) {
+      } else if(props.deliveryOption === 2) {
             return <CustomAnimation />
 
       } return <DefaultAnimation />

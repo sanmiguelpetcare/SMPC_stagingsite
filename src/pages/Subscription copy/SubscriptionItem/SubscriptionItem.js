@@ -29,10 +29,10 @@ const SubscriptionItem = props => {
                 <div className="container">
                     <div className="product-page-heading-content-container">
                         <div className="heading-container">
-                            <h1>{ subscription == "trio" ? "Nutri Chunks Protect Trio" : subscription == "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max" }</h1>
+                            <h1>{ subscription === "trio" ? "Nutri Chunks Protect Trio" : subscription === "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max" }</h1>
                         </div>
                         <div className="month-subscription-container">
-                            <h6>{ subscription == "trio" ? "3-month subscription" : subscription == "plus" ? "6-month subscription" : "1-year subscription" }</h6>
+                            <h6>{ subscription === "trio" ? "3-month subscription" : subscription === "plus" ? "6-month subscription" : "1-year subscription" }</h6>
                         </div>
                         <div className="subheading-container">
                             <p>With our subscription-based program, you can have peace of mind. You'll receive premium dog food right to your door step, plus we offer free insurance coverage in case anything goes wrong!</p>

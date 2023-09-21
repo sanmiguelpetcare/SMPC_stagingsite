@@ -6,12 +6,12 @@ export default function SecondStepContent(props) {
     const [productToanimate, setProductToAnimate] = React.useState()
 
     const handleProducttoAnimate = (itemClicked) => {
-        productList.find((item, index) => index == itemClicked)  
+        productList.find((item, index) => index === itemClicked)  
         setProductToAnimate()
         console.log(itemClicked)
     }
 
-    const productFilter = productList.filter(item => item.productWeight == "1.3kg" || "5kg" || "10kg" || "20kg")
+    const productFilter = productList.filter(item => item.productWeight === "1.3kg" || "5kg" || "10kg" || "20kg")
     
     const productItem = productFilter.map(item => {
         return (

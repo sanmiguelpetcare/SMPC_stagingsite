@@ -14,7 +14,7 @@ export default function PawprintPopup() {
             <div className="pawprint-popup-container">
                 <div className="pawprint-popup-content">
                     {
-                        pawPrintPopupStatus == "reward"  ? 
+                        pawPrintPopupStatus === "reward"  ? 
                             <>
                                 <div className="pawprint-popup-head">
                                     <p onClick={() => setPawPrintPopupStatus("")}>{"<"}</p>
@@ -22,7 +22,7 @@ export default function PawprintPopup() {
                                 </div>
                                 <YourRewards />
                             </> : 
-                        pawPrintPopupStatus == "waysToearn" ?
+                        pawPrintPopupStatus === "waysToearn" ?
                             <>
                                 <div className="pawprint-popup-head">
                                     <p onClick={() => setPawPrintPopupStatus("")}>{"<"}</p>
@@ -30,7 +30,7 @@ export default function PawprintPopup() {
                                 </div>
                                 <WaysToEarn />
                             </> :
-                        pawPrintPopupStatus == "waysToRedeem" ?
+                        pawPrintPopupStatus === "waysToRedeem" ?
                             <>
                                 <div className="pawprint-popup-head">
                                     <p onClick={() => setPawPrintPopupStatus("")}>{"<"}</p>
@@ -38,7 +38,7 @@ export default function PawprintPopup() {
                                 </div>
                                 <WaysToEarn />
                             </> :
-                        pawPrintPopupStatus == "yourActivity" ?
+                        pawPrintPopupStatus === "yourActivity" ?
                             <>
                                 <div className="pawprint-popup-head">
                                     <p onClick={() => setPawPrintPopupStatus("")}>{"<"}</p>

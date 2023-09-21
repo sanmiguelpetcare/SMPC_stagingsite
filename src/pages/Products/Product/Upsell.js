@@ -13,7 +13,7 @@ const Upsell = (props) => {
 
 //    console.log("premiumItem", props.fe_product_state.list)
 
-   const premiumItem = props.fe_product_state.list.filter(item => item.category == "Premium")
+   const premiumItem = props.fe_product_state.list.filter(item => item.category === "Premium")
 
    console.log("premiumItem", premiumItem) 
 

@@ -29,7 +29,6 @@ import MyProfile from "./Members-page/myProfile"
 import Loader from "common/Loader/Loader";
 import PageDoNotExist from "./404/404"
 import Auth from "config/Auth";
-// import swell from 'swell-js';
 
 const Container = props => {
 
@@ -47,13 +46,9 @@ const Container = props => {
 const WebPage = props => {
     const [isLoading, setLoading] = useState(true);
 
-    // swell.init("nutri-chunks-pawmily", "pk_p2aI2WSztUyecuubPrt5xrM1x6lEfepy");
-
     // const DistributorLocation = props.fe_distributioner_state.distributor
 
     useEffect(async () => {
-        // var account = await swell.account.get();
-        // console.log(account);
 
         if(Auth.token_id && Auth.user_token) {
             Auth.validateUser(

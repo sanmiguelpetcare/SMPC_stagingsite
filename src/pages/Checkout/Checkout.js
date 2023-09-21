@@ -45,8 +45,8 @@ const Checkout = props => {
                                             <h3>1. Shipping Details</h3>
                                         </div>
                                         <div 
-                                            className={`${activeStep == "first" ? `accordion-container active` : `accordion-container inactive`}`}
-                                            style={{height: activeStep == "first" ? firstStep.current.clientHeight : 0}}
+                                            className={`${activeStep === "first" ? `accordion-container active` : `accordion-container inactive`}`}
+                                            style={{height: activeStep === "first" ? firstStep.current.clientHeight : 0}}
                                         >
                                             <div ref={firstStep} className="accordion-content">
                                                 <ShippingDetails onProceed={() => setActiveStep("second")} />
@@ -60,8 +60,8 @@ const Checkout = props => {
                                             <h3>2. Payment Options</h3>
                                         </div>
                                         <div 
-                                            className={`${activeStep == "second" ? `accordion-container active` : `accordion-container inactive`}`}
-                                            style={{height: activeStep == "second" ? secondStep.current.clientHeight : 0}}
+                                            className={`${activeStep === "second" ? `accordion-container active` : `accordion-container inactive`}`}
+                                            style={{height: activeStep === "second" ? secondStep.current.clientHeight : 0}}
                                         >
                                             <div ref={secondStep} className="accoridion-content">
                                                 <DeliveryMethod onProceed={() => setActiveStep("third")} />
@@ -75,8 +75,8 @@ const Checkout = props => {
                                             <h3>3. Billing Address</h3>
                                         </div>
                                         <div 
-                                            className={`${activeStep == "third" ? `accordion-container active` : `accordion-container inactive`}`}
-                                            style={{height: activeStep == "third" ? thirdStep.current.clientHeight : 0}}
+                                            className={`${activeStep === "third" ? `accordion-container active` : `accordion-container inactive`}`}
+                                            style={{height: activeStep === "third" ? thirdStep.current.clientHeight : 0}}
                                         >
                                             <div ref={thirdStep} className="accordion-content">
                                                 <BillingDetails onProceed={() => setActiveStep("fourth")} />
@@ -90,8 +90,8 @@ const Checkout = props => {
                                             <h3>3. Review Details</h3>
                                         </div>
                                         <div 
-                                            className={`${activeStep == "fourth" ? `accordion-container active` : `accordion-container inactive`}`}
-                                            style={{height: activeStep == "fourth" ? fourthStep.current.clientHeight : 0}}
+                                            className={`${activeStep === "fourth" ? `accordion-container active` : `accordion-container inactive`}`}
+                                            style={{height: activeStep === "fourth" ? fourthStep.current.clientHeight : 0}}
                                         >
                                             <div ref={fourthStep} className="accordion-content">
                                                 <ReviewDetails />

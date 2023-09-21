@@ -12,7 +12,7 @@ export default function CustomSecondStepContent(props) {
         setSpecificSubAccordion(data)
     }
 
-    const productFilter = productList.filter(item => item.productWeight == "1.3kg" || "5kg" || "10kg" || "20kg")
+    const productFilter = productList.filter(item => item.productWeight === "1.3kg" || "5kg" || "10kg" || "20kg")
 
     const productItem = productFilter.map(item => {
         return (
@@ -52,7 +52,7 @@ export default function CustomSecondStepContent(props) {
                 <div onClick={() => handleAccordion(index)} className="month-button-container">
                     <h6>{monthButtonTitle}</h6>
                 </div>
-                <div className={specificSubAccordion == index ? `product-list-container active` : `product-list-container inactive`}>
+                <div className={specificSubAccordion === index ? `product-list-container active` : `product-list-container inactive`}>
                     <StepsAccordion 
                         content={productWithsubHeading()}
                         accordionID={index}
@@ -81,11 +81,11 @@ export default function CustomSecondStepContent(props) {
 
         let arr = [];
 
-        if(props.param == "trio") {
+        if(props.param === "trio") {
             for(let i = 0; i < 3; i++) {
                 arr = [...arr, productListContainer(monthButtonTitle[i], i)];
             }
-        } else if(props.param == "plus") {
+        } else if(props.param === "plus") {
             for(let i = 0; i < 6; i++){
                 arr = [...arr, productListContainer(monthButtonTitle[i], i)];
             }

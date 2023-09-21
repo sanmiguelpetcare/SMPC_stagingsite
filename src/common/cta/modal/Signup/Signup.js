@@ -3,7 +3,6 @@
 // import { Redirect } from "react-router-dom";
 // import { AnimatePresence } from "framer-motion"
 // import { useEffect } from "react";
-// import swell from 'swell-js';
 import { motion } from "framer-motion"
 import { ReduxConnect } from "helpers/HOC";
 import BlurredKibble1 from "../../../../assets/media/sign_up/Kibbble 01.png"
@@ -15,12 +14,10 @@ import Modal from "../Modal";
 import React from "react";
 import Request from "config/API";
 import SignupModal from "./SignupModal"
-import shopifyApi from "config/Shopify";
 import Tokenized from "config/Tokenized";
 
 
 const Signup = props => {
-    // swell.init("nutri-chunks-pawmily", "pk_p2aI2WSztUyecuubPrt5xrM1x6lEfepy")
 
     const fields = props.fe_signup_state.item.form;
     const [loginModalStatus, setLoginModalstatus] = React.useState(false);
@@ -140,80 +137,7 @@ const Signup = props => {
         validate().then( async errcount => {
             if( errcount === 0 ) {
                 if( signupStatus === false ) {
-                    // await swell.account.create({
-                    //     email: fields.email.value,
-                    //     first_name: fields.firstName.value,
-                    //     last_name: fields.lastName.value,
-                    //     email_optin: true,
-                    //     phone: fields.phone.value,
-                    //     password: fields.password.value,
-                    //     shipping : {
-                    //         name : fields.firstName.value + " " + fields.lastName.value,
-                    //         first_name : fields.firstName.value,
-                    //         last_name: fields.lastName.value,
-                    //         phone: fields.phone.value,
-                    //         address1 : fields.password.value,
-                    //         address2 : fields.brgy.value,
-                    //         state : fields.province.value,
-                    //         city : fields.city.value,
-                    //         zip : fields.zip.value,
-                    //         country : "PH"
-                    //     }
-                    // }).then(async (res) => {
-                    //     // Fetch the currently logged in account
-                    //     var acc = await swell.account.get();
-
-                    //     // Return error when email already exists
-                    //     if (res?.email?.message?.toLowerCase() === "already exists") {
-                    //         handleOpenFailedLoginModal();
-                    //     }
-
-                    //     if (acc === null) {
-                    //         console.log("Account Creation Error ----", acc);
-                    //     } else {
-                    //         console.log("Account Created ---", acc);
-                    //         props.fe_user_actions.setLoggedUser(acc);
-
-                    //         const inputs = {
-                    //             email: fields.email.value, 
-                    //             password: fields.password.value
-                    //         };
-                    //         const gtoken = Tokenized.encrypt(inputs);
-                    //         const params = {
-                    //             user: gtoken.token
-                    //         };
-
-                    //         if(props.fe_user_actions.setLoggedUser) {
-                    //             props.fe_user_actions.setLoggedUser(acc);
-                    //             console.log(acc)
-            
-                    //             localStorage.setItem('token_id', gtoken.id);
-                    //             localStorage.setItem('logged_user', gtoken.token);
-                
-                    //             props.handleClose();
-                    //         }
-
-                    //         // Append the furbabies to current account
-                    //         // await swell.put(`account/${acc.id}`, {
-                    //         //     fur_babies : props.fe_signup_state.item.furbabies.filter( f => f.name )
-                    //         // }).then(res => {
-                    //         //     console.log("Updated furbabies", res)
-                    //         // })
-
-                    //         await swell.account.update({
-                    //             metadata: {
-                    //                 fur_babies : props.fe_signup_state.item.furbabies.filter( f => f.name )
-                    //             }
-                    //         }).then(res => {
-                    //             console.log("Updated furbabies", res)
-                    //         })
-                    //     }
-                    // })
-                    // .catch(err => {
-                    //     console.error("Account Creation", err)
-                    //     props.common_actions.updateLoading(false)
-                    //     setAccountCreationModalStatus(true)
-                    // })
+                   
 
                     const data = {
                         firstName: fields.firstName.value,

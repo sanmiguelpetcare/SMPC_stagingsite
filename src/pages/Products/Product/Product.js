@@ -13,7 +13,7 @@ import Upsell from "./Upsell"
 const Product = props => {
     const { id } = useParams();
     const product = props.fe_product_state.item.selected || {};
-    const premiumItem = props.fe_product_state.list.filter(item => item.category == "Premium")  
+    const premiumItem = props.fe_product_state.list.filter(item => item.category === "Premium")  
 
     const prodInfo = React.useRef()
     const ingr = React.useRef()
@@ -66,8 +66,8 @@ const Product = props => {
                                         <h6>Products Info</h6>
                                     </div>
                                     <div 
-                                        className={`${activeInfo == "prodInfo" ? `information-parent-container active` : `information-parent-container inactive`}`}
-                                        style={{height: activeInfo == "prodInfo" ? prodInfo.current.clientHeight : 0}}
+                                        className={`${activeInfo === "prodInfo" ? `information-parent-container active` : `information-parent-container inactive`}`}
+                                        style={{height: activeInfo === "prodInfo" ? prodInfo.current.clientHeight : 0}}
                                     >
                                         <div ref={prodInfo} className="information-content-container">
                                             <div dangerouslySetInnerHTML={{__html: product.description || "N/A" }} />
@@ -79,8 +79,8 @@ const Product = props => {
                                         <h6>Ingredients</h6>
                                     </div>
                                     <div 
-                                        className={`${activeInfo == "ingr" ? `information-parent-container active` : `information-parent-container inactive`}`}
-                                        style={{height: activeInfo == "ingr" ? ingr.current.clientHeight : 0}}
+                                        className={`${activeInfo === "ingr" ? `information-parent-container active` : `information-parent-container inactive`}`}
+                                        style={{height: activeInfo === "ingr" ? ingr.current.clientHeight : 0}}
                                     >
                                         <div ref={ingr} className="information-content-container">
                                             <div dangerouslySetInnerHTML={{__html: product.ingredients || "N/A" }} />
@@ -93,8 +93,8 @@ const Product = props => {
                                             <h6>Feeding Guide</h6>
                                         </div>
                                         <div 
-                                            className={`${activeInfo == "fGuide" ? `information-parent-container active` : `information-parent-container inactive`}`}
-                                            style={{height: activeInfo == "fGuide" ? fGuide.current.clientHeight : 0}}
+                                            className={`${activeInfo === "fGuide" ? `information-parent-container active` : `information-parent-container inactive`}`}
+                                            style={{height: activeInfo === "fGuide" ? fGuide.current.clientHeight : 0}}
                                         >
                                             <div ref={fGuide} className="information-content-container">
                                                 <table>
@@ -125,8 +125,8 @@ const Product = props => {
                                             <h6>Guaranteed Analysis</h6>
                                         </div>
                                         <div 
-                                            className={`${activeInfo == "gAnalysis" ? `information-parent-container active` : `information-parent-container inactive`}`}
-                                            style={{height: activeInfo == "gAnalysis" ? gAnalysis.current.clientHeight : 0}}
+                                            className={`${activeInfo === "gAnalysis" ? `information-parent-container active` : `information-parent-container inactive`}`}
+                                            style={{height: activeInfo === "gAnalysis" ? gAnalysis.current.clientHeight : 0}}
                                         >
                                             <div ref={gAnalysis} className="information-content-container">
                                                 <table>

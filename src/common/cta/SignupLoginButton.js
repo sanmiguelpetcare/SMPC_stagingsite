@@ -2,23 +2,12 @@ import Auth from "config/Auth";
 import { Link } from 'react-router-dom'
 import React from "react";
 import { ReduxConnect } from "helpers/HOC";
-// import swell from 'swell-js'
 
 const SignupLoginButton = (props) => {
-    // swell.init("nutri-chunks-pawmily", "pk_p2aI2WSztUyecuubPrt5xrM1x6lEfepy");
 
     const [dropdownStatus, setDropdownStatus] = React.useState(false);
 
     const handleLogout = async () => {
-        // await swell.account.logout()
-        //     .then(res => {
-        //         console.log("Successfully logged out --- \n", res)
-        //         props.fe_user_actions.setLoggedUser(null);
-        //         window.location.replace("/");
-        //     })
-        //     .catch(err => {
-        //         console.log("Logout Error --- \n", err)
-        //     })
 
         Auth.logout(() => {
             props.fe_user_actions.setLoggedUser(null);
