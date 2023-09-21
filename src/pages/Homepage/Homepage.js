@@ -64,10 +64,10 @@ export default function Homepage() {
                         </div>
                     </div>
                     
-                    {/* <HeroSlider />
+                    <HeroSlider />
                     <KibbleCapableSection />
                     <ProductsCarousel />
-                    <Testimonials /> */}
+                    <Testimonials />
                 </div>
             </div>
         </>
