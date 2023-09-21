@@ -75,7 +75,7 @@ export default function NavbarList(props) {
                         {/* <li><a href="http://localhost:3333/">Products</a></li> */}
                        
                     </div>
-                    {/* <Link to="/pawprints"><li onClick={() => handleClick("pawmily")} className={activeItem == "pawmily" ? "active" : "inactive"}>Pawmily</li></Link> */}
+                    {/* <Link to="/pawprints"><li onClick={() => handleClick("pawmily")} className={activeItem  ===  "pawmily" ? "active" : "inactive"}>Pawmily</li></Link> */}
                     <NavLink to="/nutrition"><li>
                         Nutrition
                         <div className="active-bar"></div>

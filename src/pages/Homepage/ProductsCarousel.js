@@ -93,14 +93,14 @@ export default function ProductsCarousel() {
                                 {imageArray.map((item, index) => {
                                     return (
                                         <div 
-                                            // onClick={index == imageIndex ? () => goToproduct(index) : () => goToproduct()} 
+                                            // onClick={index === imageIndex ? () => goToproduct(index) : () => goToproduct()} 
                                             className={
-                                                index == imageIndex ? "product-container active" : 
-                                                index + 2 == imageIndex || index - 8 == imageIndex || index + 8 == imageIndex || index - 2 == imageIndex ? "product-container smallest" : 
-                                                index + 1 == imageIndex || index - 9 == imageIndex || index + 9 == imageIndex || index - 1 == imageIndex ? "product-container smaller" : 
+                                                index === imageIndex ? "product-container active" : 
+                                                index + 2 === imageIndex || index - 8 === imageIndex || index + 8 === imageIndex || index - 2 === imageIndex ? "product-container smallest" : 
+                                                index + 1 === imageIndex || index - 9 === imageIndex || index + 9 === imageIndex || index - 1 === imageIndex ? "product-container smaller" : 
                                                 "product-container inactive"
                                             }
-                                            onClick={index == imageIndex ? () => handleProductSinglemodal(index) : null}
+                                            onClick={index === imageIndex ? () => handleProductSinglemodal(index) : null}
                                         >
                                             <img src={item} alt="" />
                                         </div> 

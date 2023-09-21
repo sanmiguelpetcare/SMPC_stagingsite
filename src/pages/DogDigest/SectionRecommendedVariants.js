@@ -5,7 +5,7 @@ import Titlebox from "../../assets/media/dog_digest/common-assets/titlebox-1.svg
 
 export default function RecommendedVariants(props) {
 
-    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug == props.slug ) 
+    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug  ===  props.slug ) 
 
     let backgroundImage = props.DogListMap.backgroundImage
     let dogFoodA = props.DogListMap.productsImageA

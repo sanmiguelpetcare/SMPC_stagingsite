@@ -61,7 +61,7 @@ export default function ProtectPageModal(props) {
         })
 
         const monthDisplay = () => {
-            if(props.productContent == 0){
+            if(props.productContent === 0){
                 return <></>
             } else {
                 return (

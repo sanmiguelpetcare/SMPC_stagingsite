@@ -360,7 +360,7 @@ const Furbabies = (props) => {
                                                 </div>
                                             )
                                         }
-                                        {furbabies.length == 1 && (
+                                        {furbabies.length === 1 && (
                                             <p onClick={ e => onAdditem(e, i)}>Add furbaby</p>
                                         )}
                                     </div>

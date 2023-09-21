@@ -27,6 +27,7 @@ const ForkTsCheckerWebpackPlugin =
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const createEnvironmentHash = require('./webpack/persistentCache/createEnvironmentHash');
+const { all } = require('../server/routes/product');
 
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
@@ -87,13 +88,17 @@ const hasJsxRuntime = (() => {
 
 
 module.exports = {
-  devServer : {
-    allowedHosts : [
-        'localhost', 
-        'ondigitalocean.com',
-        'sanmiguelpetcare.com',
-        'sea-lion-app-lib2w.ondigitalocean.app'
-    ] 
+  devServer: {
+    compress: true, 
+    host: '0.0.0.0', 
+    allowedHosts: 'all',
+    port: 'auto',
+    // allowedHosts : [
+    //     'localhost', 
+    //     'ondigitalocean.com',
+    //     'sanmiguelpetcare.com',
+    //     'sea-lion-app-lib2w.ondigitalocean.app'
+    // ]
   }
 }
 

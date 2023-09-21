@@ -49,9 +49,9 @@ export default function ProtectPage(props) {
     })
 
     let productPriceperQty = Object.values(productQtyPerMonth[mainIndex] || []).map((item, i) => {
-        if(removeTrigger == "add") {
+        if(removeTrigger === "add") {
             return item * productPricePermonth[i]
-        } else if(removeTrigger == "remove") {
+        } else if(removeTrigger === "remove") {
             if(productPricePermonth[i]) {
                 return item * productPricePermonth[i]
             } return 0
@@ -75,9 +75,9 @@ export default function ProtectPage(props) {
     })
 
     let regularProductQtyperquantity = Object.values(productQty).map((item, i) => {
-        if(removeTrigger == "add"){
+        if(removeTrigger === "add"){
             return item * regularProductPrice[i]
-        } else if(removeTrigger == "remove"){
+        } else if(removeTrigger === "remove"){
             if(regularProductPrice[i]) {
                 return item * regularProductPrice[i]
             } return 0
@@ -87,10 +87,10 @@ export default function ProtectPage(props) {
 
     const handleDeliveryOptions = (data) => {
             setDeliveryOption(data)
-        if(data == 1) {
+        if(data === 1) {
             setSeletedProductPerMonth({})
             setProductQtyPerMonth({})
-        } else if(data == 2) {
+        } else if(data === 2) {
             setSelectedItems([])
             setProductQty({})
         }
@@ -187,9 +187,9 @@ export default function ProtectPage(props) {
             setRemovetrigger("add")
             triggerFunction(index)
 
-            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id == item.id) 
+            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id === item.id) 
             let filterNotSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id != item.id) 
-            let selectedMonthIndex = Object.keys(selectedProductPerMonth).filter(selectedItem => selectedItem == index)
+            let selectedMonthIndex = Object.keys(selectedProductPerMonth).filter(selectedItem => selectedItem === index)
             let filterNotSelectedProductQtyPerMonth = Object.fromEntries(Object.entries(productQtyPerMonth[index] || []).filter(selectedItem => selectedItem[0] != item.id))
 
             if(selectedMonthIndex.length < 1) {
@@ -218,7 +218,7 @@ export default function ProtectPage(props) {
                         [index]: filterNotSelectedProductQtyPerMonth
                     }
                 })
-            } else if(filterSelectedProductPerMonth.length == 0) {
+            } else if(filterSelectedProductPerMonth.length === 0) {
                 setSeletedProductPerMonth(prevData => {
                     return {
                         ...prevData,
@@ -236,8 +236,8 @@ export default function ProtectPage(props) {
 
         const addProduct = (item, index) => {
             
-            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id == item.id) 
-            let selectedMonthIndex = Object.keys(selectedProductPerMonth).filter(selectedItem => selectedItem == index)
+            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id === item.id) 
+            let selectedMonthIndex = Object.keys(selectedProductPerMonth).filter(selectedItem => selectedItem === index)
 
             setMainItem(item)
             setMainIndex(index)
@@ -269,7 +269,7 @@ export default function ProtectPage(props) {
                         [index]: {...prevData[index] || {}, [item.id]: productQtyPerMonth[index][item.id] + 1}
                     }
                 })
-            } else if(filterSelectedProductPerMonth.length == 0) {
+            } else if(filterSelectedProductPerMonth.length === 0) {
                 setSeletedProductPerMonth(prevData => {
                     return {
                         ...prevData,
@@ -287,7 +287,7 @@ export default function ProtectPage(props) {
 
         const removeProduct = (item, index) => {
 
-            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id == item.id) 
+            let filterSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id === item.id) 
             let filterNotSelectedProductPerMonth = (selectedProductPerMonth[index] || []).filter(selectedItem => selectedItem.id != item.id) 
 
             setMainItem(item)
@@ -301,7 +301,7 @@ export default function ProtectPage(props) {
                         ...prevData
                     }
                 })
-                if(productQtyPerMonth[index][item.id] == 1) {
+                if(productQtyPerMonth[index][item.id] === 1) {
                     setSeletedProductPerMonth(prevData => {
                         return {
                             ...prevData,
@@ -325,7 +325,7 @@ export default function ProtectPage(props) {
             }
         }
     
-        const productFilter = productList.filter(item => item.weight == "10kg" || item.weight == "20kg")
+        const productFilter = productList.filter(item => item.weight === "10kg" || item.weight === "20kg")
     
         const ProductItem = (props) => {
 
@@ -334,7 +334,7 @@ export default function ProtectPage(props) {
                         <>  
                             <div 
                                 onClick={() => handleSelectedProducts(item, props.monthIndex)} 
-                                className={`specific-product-container ${(Object.values(selectedProductPerMonth)[props.monthIndex] || []).find(selectedItem => selectedItem.id == item.id) ? `bordered` : `only-hover`}`}
+                                className={`specific-product-container ${(Object.values(selectedProductPerMonth)[props.monthIndex] || []).find(selectedItem => selectedItem.id === item.id) ? `bordered` : `only-hover`}`}
                             >
                                 <div className="specific-product-content">
                                     <div className="product-image-container">
@@ -385,7 +385,7 @@ export default function ProtectPage(props) {
                     <div onClick={() => handleSubAccordion(index)} className="month-button-container">
                         <h6>{monthButtonTitle}</h6>
                     </div>
-                    <div className={specificSubAccordion == index ? `product-list-container active` : `product-list-container inactive`}>
+                    <div className={specificSubAccordion === index ? `product-list-container active` : `product-list-container inactive`}>
                         <StepsAccordion 
                             content={<ProductWithsubHeading 
                                 monthIndex={index}
@@ -415,15 +415,15 @@ export default function ProtectPage(props) {
     
             let arr = [];
     
-            if(props.param == "trio") {
+            if(props.param === "trio") {
                 for(let i = 0; i < 3; i++) {
                     arr = [...arr, productListContainer(monthButtonTitle[i], i)];
                 }
-            } else if(props.param == "plus") {
+            } else if(props.param === "plus") {
                 for(let i = 0; i < 6; i++){
                     arr = [...arr, productListContainer(monthButtonTitle[i], i)];
                 }
-            } else if(props.param == "max-a" || props.param == "max-b") {
+            } else if(props.param === "max-a" || props.param === "max-b") {
                 for(let i = 0; i < 12; i++){
                     arr = [...arr, productListContainer(monthButtonTitle[i], i)];
                 }
@@ -480,11 +480,11 @@ export default function ProtectPage(props) {
             setRemovetrigger("add")
             triggerFunction()
 
-            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id == item.id)
+            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id === item.id)
             let filterNotSelected = selectedItems.filter(selectedItem => selectedItem.id != item.id)    
             let filterNotSelectedProductQty = Object.fromEntries(Object.entries(productQty).filter(selectedItem => selectedItem[0] != item.id))
 
-            if(selectedItems.length == 0) {
+            if(selectedItems.length === 0) {
                 setSelectedItems([item])
                 setProductQty(prevData => {
                     return {
@@ -517,9 +517,9 @@ export default function ProtectPage(props) {
             setRemovetrigger("add")
             triggerFunction()
 
-            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id == item.id)
+            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id === item.id)
             
-            if(selectedItems.length == 0) {
+            if(selectedItems.length === 0) {
                 setSelectedItems([item])
                 setProductQty(prevData => {
                     return {
@@ -563,7 +563,7 @@ export default function ProtectPage(props) {
             setRemovetrigger("remove")
             triggerFunction()
 
-            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id == item.id)
+            let filterSelected = selectedItems.filter(selectedItem => selectedItem.id === item.id)
             let filterNotSelected = selectedItems.filter(selectedItem => selectedItem.id != item.id) 
             
             if(filterSelected.length > 0) {
@@ -573,7 +573,7 @@ export default function ProtectPage(props) {
                     ]
                 })
 
-                if(productQty[item.id] == 1) {
+                if(productQty[item.id] === 1) {
                     setSelectedItems(filterNotSelected)
                     setProductQty(prevData => {
                         return {
@@ -592,7 +592,7 @@ export default function ProtectPage(props) {
             }
         }
 
-        const productFilter = productList.filter(item => item.weight == "10kg" || item.weight == "20kg")
+        const productFilter = productList.filter(item => item.weight === "10kg" || item.weight === "20kg")
         
         const productItem = productFilter.map(item => {
 
@@ -609,7 +609,7 @@ export default function ProtectPage(props) {
                     <div 
                         id={item.productId} 
                         onClick={() => handleSelectedProducts(item)} 
-                        className={`specific-product-container ${selectedItems.find(itemClicked => item.id == itemClicked.id) ? `bordered` : `only-hover`}`}
+                        className={`specific-product-container ${selectedItems.find(itemClicked => item.id === itemClicked.id) ? `bordered` : `only-hover`}`}
                     >
                         <div className="specific-product-content">
                             <div className="product-image-container">
@@ -675,7 +675,7 @@ export default function ProtectPage(props) {
                             <div className="logo-container">
                                 <div className="logo-content-container">
                                     <div className="logo-content">
-                                        <img src={param == "trio" ? "Nutri Chunks Protect Trio" : param == "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max"} alt=""/>
+                                        <img src={param === "trio" ? "Nutri Chunks Protect Trio" : param === "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max"} alt=""/>
                                     </div>
                                     <div className="logo-content">
                                         <img src="" alt=""/>
@@ -687,10 +687,10 @@ export default function ProtectPage(props) {
                             </div>  
                             <div className="product-page-heading-content-container">
                                 <div className="heading-container">
-                                    <h1>{param == "trio" ? "Nutri Chunks Protect Trio" : param == "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max"}</h1>
+                                    <h1>{param === "trio" ? "Nutri Chunks Protect Trio" : param === "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max"}</h1>
                                 </div>
                                 <div className="month-subscription-container">
-                                    <h6>{param == "trio" ? "3-month subscription" : param == "plus" ? "6-month subscription" : "1-year subscription"}</h6>
+                                    <h6>{param === "trio" ? "3-month subscription" : param === "plus" ? "6-month subscription" : "1-year subscription"}</h6>
                                 </div>
                                 <div className="subheading-container">
                                     <p>With our subscription-based program, you can have peace of mind. You'll receive premium dog food right to your door step, plus we offer free insurance coverage in case anything goes wrong!</p>
@@ -714,8 +714,8 @@ export default function ProtectPage(props) {
                                         <h4>1. Select Delivery Package</h4>
                                     </div>
                                     <div 
-                                        className={specificAccordion == "1st" ? `accordion-content-container active` : `accordion-content-container inactive`}
-                                        style={{height: specificAccordion == "1st" ? firstStepHeight.current.clientHeight : 0}}
+                                        className={specificAccordion === "1st" ? `accordion-content-container active` : `accordion-content-container inactive`}
+                                        style={{height: specificAccordion === "1st" ? firstStepHeight.current.clientHeight : 0}}
                                     >
                                         <div ref={firstStepHeight} className="accordion-content">
                                             <StepsAccordion 
@@ -732,8 +732,8 @@ export default function ProtectPage(props) {
                                         {
                                             deliveryOption === 1 ? 
                                                 <div  
-                                                    className={specificAccordion == "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`}
-                                                    style={{height: specificAccordion == "2nd" ? secondStepHeight.current.clientHeight : 0}}
+                                                    className={specificAccordion === "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`}
+                                                    style={{height: specificAccordion === "2nd" ? secondStepHeight.current.clientHeight : 0}}
                                                 >
                                                     <div ref={secondStepHeight} className="accordion-content">
                                                         <StepsAccordion 
@@ -745,7 +745,7 @@ export default function ProtectPage(props) {
                                                 </div>
                                             : deliveryOption === 2 ? 
                                                 <div 
-                                                    className={specificAccordion == "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`}
+                                                    className={specificAccordion === "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`}
                                                 >
                                                     <div ref={secondStepHeight} className="accordion-content">
                                                         <StepsAccordion 
@@ -766,8 +766,8 @@ export default function ProtectPage(props) {
                                         <h4>3. Choose Delivery Week</h4>
                                     </div>
                                     <div  
-                                        className={specificAccordion == "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`}
-                                        style={{height: specificAccordion == "3rd" ? thirdStepHeight.current.clientHeight : 0}}
+                                        className={specificAccordion === "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`}
+                                        style={{height: specificAccordion === "3rd" ? thirdStepHeight.current.clientHeight : 0}}
                                     >
                                         <div ref={thirdStepHeight} className="accordion-content">
                                             <StepsAccordion 

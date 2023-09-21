@@ -33,10 +33,10 @@ export default function ThirdStepContent(props) {
                 <div className="calendar-image-container">
                     <img src={Calendar} alt="calendar" />
                     <div className={
-                                    selectedWeek == 1 ? "circle-image week-one"
-                                :  selectedWeek == 2 ? "circle-image week-two"
-                                :  selectedWeek == 3 ? "circle-image week-three"
-                                :  selectedWeek == 4 ? "circle-image week-four" 
+                                    selectedWeek === 1 ? "circle-image week-one"
+                                :  selectedWeek === 2 ? "circle-image week-two"
+                                :  selectedWeek === 3 ? "circle-image week-three"
+                                :  selectedWeek === 4 ? "circle-image week-four" 
                                 : ""
                             }></div>
                 </div>

@@ -21,7 +21,7 @@ const StatisticsAspect = props => {
 
 export default function StatisticsSection(props) {
 
-    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug == props.slug ) 
+    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug === props.slug ) 
 
     let backgroundImage = props.DogListMap.backgroundImage
     let dogType = props.DogListMap.dogType

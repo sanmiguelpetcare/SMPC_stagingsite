@@ -201,11 +201,11 @@ export default function HeroSection() {
                     <div className="hero-section-container">
                         <AnimatePresence>
                         {
-                            elements == 1 ? <FirstSlide key={'a'}/> : 
-                            elements == 2 ? <SecondSlide key={'b'}/> : 
-                            /*elements == 3 ? <ThirdSlide key={'c'}/> : 
-                             elements == 4 ? <FourthSlide key={'d'}/> : 
-                            elements== 5 ? <FifthSlide key={'e'}/> : */""}
+                            elements === 1 ? <FirstSlide key={'a'}/> : 
+                            elements === 2 ? <SecondSlide key={'b'}/> : 
+                            /*elements === 3 ? <ThirdSlide key={'c'}/> : 
+                             elements === 4 ? <FourthSlide key={'d'}/> : 
+                            elements === 5 ? <FifthSlide key={'e'}/> : */""}
                         </AnimatePresence>
                     </div>
                 </div>
