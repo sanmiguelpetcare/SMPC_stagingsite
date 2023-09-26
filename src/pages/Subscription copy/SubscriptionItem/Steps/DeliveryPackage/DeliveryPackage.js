@@ -42,7 +42,7 @@ const DeliveryPackage = props => {
             <div onClick={ onOpenToggle } className="step-heading">
                 <h4>1. Select Delivery Package</h4>
             </div>
-            <div className={ activeToggle.id === "1st" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id === "1st" ? activeToggle.contentHeight : 0 }}>
+            <div className={ activeToggle.id == "1st" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id == "1st" ? activeToggle.contentHeight : 0 }}>
                 <div ref={ props.firstContentHeightRef } className="accordion-content">
                     <div className="first-step-container">
                         <div className="step-subheading">

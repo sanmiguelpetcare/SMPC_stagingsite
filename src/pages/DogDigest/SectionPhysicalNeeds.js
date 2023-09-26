@@ -6,7 +6,7 @@ import PurpleBar from "../../assets/media/dog_digest/common-assets/purpleBar.png
 
 export default function PhysicalNeeds(props) {
 
-    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug === props.slug )
+    // const DogListMap = DogListMapping.find((dogDetails, index) => dogDetails.slug == props.slug )
 
     let energyLevel = props.DogListMap.energyLevel
     let potentialPlayfulness = props.DogListMap.potentialPlayfulness

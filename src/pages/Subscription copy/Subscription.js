@@ -183,7 +183,7 @@ const Subscription = props => {
                                             <li className="check"><img src="" alt=""/>Dog Insurance Package</li>
                                             <li className="check"><img src="" alt=""/>Bark Pack<br/> {`(`}Subscription Freebies{`)`}</li>
                                             <li className="check"><img src="" alt=""/>Pet Care Package</li>
-                                            <li className={protectMaxLink === 2 ? "cross" : "check"}><img src="" alt=""/>Discount {protectMaxLink === 0 ? "8%" : protectMaxLink === 1 ? "5%" : ""}</li>
+                                            <li className={protectMaxLink == 2 ? "cross" : "check"}><img src="" alt=""/>Discount {protectMaxLink == 0 ? "8%" : protectMaxLink == 1 ? "5%" : ""}</li>
                                         </ul>
                                     </div>
                                     <div 
@@ -191,13 +191,13 @@ const Subscription = props => {
                                         className="subscription-type-payment-container"
                                     >
                                         <div className="payment-mode-container choose-payment-container">
-                                            <p>{protectMaxLink === 0 ? "One-time Payment" : protectMaxLink === 1 ? "Billed Semi-annually" : protectMaxLink === 2 ? "Billed Quarterly" : "Choose Payment Fequencies"}</p>
+                                            <p>{protectMaxLink == 0 ? "One-time Payment" : protectMaxLink == 1 ? "Billed Semi-annually" : protectMaxLink == 2 ? "Billed Quarterly" : "Choose Payment Fequencies"}</p>
                                         </div>
                                         {pMaxDropDown ? <Popup Content={protectMaxCategory}/> : <></>}
                                     </div>
                                 </div>
                                 <div className="subscription-type-button-container">
-                                    <Link to={protectMaxLink === 0 ? "/nc-protect/max-a" : protectMaxLink === 1 ? "/nc-protect/max-b" : protectMaxLink === 2 ? "/nc-protect/max-c" : ""}>
+                                    <Link to={protectMaxLink == 0 ? "/nc-protect/max-a" : protectMaxLink == 1 ? "/nc-protect/max-b" : protectMaxLink == 2 ? "/nc-protect/max-c" : ""}>
                                         <button>Subscribe</button>
                                     </Link>
                                 </div>
@@ -233,7 +233,7 @@ const Subscription = props => {
                                             className="subscription-type-payment-container"
                                         >
                                             <div className="payment-mode-container choose-payment-container">
-                                                <p>{protectPlusLink === 0 ? "One-time Payment" : protectPlusLink === 1 ? "Billed Quarterly"  : "Choose Payment Fequencies"}</p>
+                                                <p>{protectPlusLink == 0 ? "One-time Payment" : protectPlusLink == 1 ? "Billed Quarterly"  : "Choose Payment Fequencies"}</p>
                                             </div>
                                             {pPlusDropDown ? <Popup  Content={protectPlusCategory}/> : <></>}
                                         </div>

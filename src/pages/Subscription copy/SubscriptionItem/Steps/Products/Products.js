@@ -36,7 +36,7 @@ const Products = props => {
                 <h4>2. Add Order</h4>
             </div>
             <div className="second-step-monthly-container">
-                <div className={ activeToggle.id === "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id === "2nd" ? activeToggle.contentHeight : 0 }}>
+                <div className={ activeToggle.id == "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id == "2nd" ? activeToggle.contentHeight : 0 }}>
                     <div ref={ props.secondContentHeightRef } className="accordion-content">
                         { deliveryOption === 1 && <Regular onNextToggle={ onNextToggle } /> }
                         { deliveryOption === 2 && <Custom subscription={ props.subscription } onNextToggle={ onNextToggle } /> }

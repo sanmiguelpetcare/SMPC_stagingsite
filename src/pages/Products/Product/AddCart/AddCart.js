@@ -17,7 +17,7 @@ const AddCart = props => {
     const [modalStatus, setModalStatus] = useState(false)
 
     const onAddCart = () => {
-        if(qty === "") {
+        if(qty == "") {
             setValidationMessage(true)
             console.log("nullnullnu")
         } 

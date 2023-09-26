@@ -13,7 +13,7 @@ export default function DogDigestSingle() {
 
     let { param } = useParams()
 
-    const DogListMap = DogListMapping[Object.keys(DogListMapping).find(key => key === param)];
+    const DogListMap = DogListMapping[Object.keys(DogListMapping).find(key => key == param)];
 
     console.log("DogListMap", DogListMap)
     console.log("param", param)

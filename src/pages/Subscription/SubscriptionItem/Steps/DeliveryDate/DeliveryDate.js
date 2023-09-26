@@ -152,7 +152,7 @@ const DeliveryDate = props => {
     }
 
     return (
-        <div className={activeToggle.id === "3rd" ? "third-step-main-container step-main-container active" : "third-step-main-container step-main-container inactive"}>
+        <div className={activeToggle.id == "3rd" ? "third-step-main-container step-main-container active" : "third-step-main-container step-main-container inactive"}>
             <div className="step-child-container">
                 <div className="image-container">
                     <img src={StepTwo} alt=""/>
@@ -161,34 +161,34 @@ const DeliveryDate = props => {
                     <div onClick={ onOpenToggle } className="step-heading">
                         <h4>3. Choose Delivery Week</h4>
                     </div>
-                    {/* <div className={ activeToggle.id === "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id === "3rd" ? activeToggle.contentHeight : 0 }}> */}
-                    <div className={ activeToggle.id === "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`}>
+                    {/* <div className={ activeToggle.id == "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id == "3rd" ? activeToggle.contentHeight : 0 }}> */}
+                    <div className={ activeToggle.id == "3rd" ? `accordion-content-container active` : `accordion-content-container inactive`}>
                         <div ref={ props.thirdContentHeightRef } className="accordion-content">
                             <div className="step-subheading">
                                 <p>choose delivery week</p>
                             </div>
                             <div className="calendar-container">
                                 <div className="week-button-container">
-                                    <div className={selectedWeek === 1 ? "button-container active": "button-container inactive"}>
+                                    <div className={selectedWeek == 1 ? "button-container active": "button-container inactive"}>
                                         <button onClick={() => props.fe_subscription_actions.updateSelectedWeek(1)}>Week 1</button>
                                     </div>
-                                    <div className={selectedWeek === 2 ? "button-container active": "button-container inactive"}>
+                                    <div className={selectedWeek == 2 ? "button-container active": "button-container inactive"}>
                                         <button onClick={() => props.fe_subscription_actions.updateSelectedWeek(2)}>Week 2</button>
                                     </div>
-                                    <div className={selectedWeek === 3 ? "button-container active": "button-container inactive"}>
+                                    <div className={selectedWeek == 3 ? "button-container active": "button-container inactive"}>
                                         <button onClick={() => props.fe_subscription_actions.updateSelectedWeek(3)}>Week 3</button>
                                     </div>
-                                    <div className={selectedWeek === 4 ? "button-container active": "button-container inactive"}>
+                                    <div className={selectedWeek == 4 ? "button-container active": "button-container inactive"}>
                                         <button onClick={() => props.fe_subscription_actions.updateSelectedWeek(4)}>Week 4</button>
                                     </div>
                                 </div>
                                 <div className="calendar-image-container">
                                     <img src={ Calendar } alt="calendar" />
                                     {/* <div className={
-                                        selectedWeek === 1 ? "circle-image week-one"
-                                        :  selectedWeek === 2 ? "circle-image week-two"
-                                        :  selectedWeek === 3 ? "circle-image week-three"
-                                        :  selectedWeek === 4 ? "circle-image week-four" 
+                                        selectedWeek == 1 ? "circle-image week-one"
+                                        :  selectedWeek == 2 ? "circle-image week-two"
+                                        :  selectedWeek == 3 ? "circle-image week-three"
+                                        :  selectedWeek == 4 ? "circle-image week-four" 
                                         : ""
                                     }></div> */}
                                 </div>

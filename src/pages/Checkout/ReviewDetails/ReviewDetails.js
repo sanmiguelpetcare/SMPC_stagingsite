@@ -21,12 +21,12 @@ const ReviewDetails = props => {
             const zipCode = distributor[7].split(",");
             const town = distributor[3].split(",");
     
-            const distributor4adda = bankDetails.adda.zipCode.find(item => item === zipCode[0])
-            const distributorNma = bankDetails.arlu.zipCode.find(item => item === zipCode[0])
-            const distributorBellamor = bankDetails.bellmanor.zipCode.find(item => item === zipCode[0])
-            const distributorMdls = bankDetails.febc.zipCode.find(item => item === zipCode[0])
-            const distributorArlu = bankDetails.mdls.zipCode.find(item => item === zipCode[0])
-            const distributorFebc = bankDetails.nma.zipCode.find(item => item === zipCode[0])
+            const distributor4adda = bankDetails.adda.zipCode.find(item => item == zipCode[0])
+            const distributorNma = bankDetails.arlu.zipCode.find(item => item == zipCode[0])
+            const distributorBellamor = bankDetails.bellmanor.zipCode.find(item => item == zipCode[0])
+            const distributorMdls = bankDetails.febc.zipCode.find(item => item == zipCode[0])
+            const distributorArlu = bankDetails.mdls.zipCode.find(item => item == zipCode[0])
+            const distributorFebc = bankDetails.nma.zipCode.find(item => item == zipCode[0])
     
             if(distributor4adda) {
                 setDistributorBankDetails(bankDetails.adda.email)

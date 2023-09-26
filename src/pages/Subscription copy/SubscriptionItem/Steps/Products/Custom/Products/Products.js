@@ -5,7 +5,7 @@ import Product from "./Product/Product";
 const Products = props => {
     return (
         <div className="product-items-container">
-            { props.fe_subscription_state.products.filter(item => item.weight === "10 kg" || item.weight === "20 kg").map( product => <Product product={ product } month={ props.month } /> ) }
+            { props.fe_subscription_state.products.filter(item => item.weight == "10 kg" || item.weight == "20 kg").map( product => <Product product={ product } month={ props.month } /> ) }
         </div>
     )
 }

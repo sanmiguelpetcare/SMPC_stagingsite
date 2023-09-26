@@ -39,8 +39,8 @@ const Products = props => {
         <div>
             <DistributorModal />
             <div className="products">
-                {/* {props.fe_distributioner_state.distributor === null ? <></> : props.fe_distributioner_state.distributor != null && !modalStatus ? <DistributionLocation modalStatus={modalStatus} handleOpenModal={handleOpenModal}/> : <></>} */}
-                {/* {props.fe_distributioner_state.distributor === null ? <></> : <DistributionLocation modalStatus={modalStatus} handleOpenModal={handleOpenModal}/>} */}
+                {/* {props.fe_distributioner_state.distributor == null ? <></> : props.fe_distributioner_state.distributor != null && !modalStatus ? <DistributionLocation modalStatus={modalStatus} handleOpenModal={handleOpenModal}/> : <></>} */}
+                {/* {props.fe_distributioner_state.distributor == null ? <></> : <DistributionLocation modalStatus={modalStatus} handleOpenModal={handleOpenModal}/>} */}
                 <div className="products-banner-section">
                     <div className="container">
                         <div className="products-banner-content-container">

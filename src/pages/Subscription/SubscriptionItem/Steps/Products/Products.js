@@ -31,7 +31,7 @@ const Products = props => {
     }
 
     return (
-        <div className={activeToggle.id === "2nd" ? "second-step-main-container step-main-container active" : "second-step-main-container step-main-container inactive"}>
+        <div className={activeToggle.id == "2nd" ? "second-step-main-container step-main-container active" : "second-step-main-container step-main-container inactive"}>
             {/* <div onClick={ onOpenToggle } className="step-heading"> */}
             <div className="step-child-container">
                 <div className="image-container">
@@ -42,7 +42,7 @@ const Products = props => {
                         <h4>2. Add Order</h4>
                     </div>
                     <div className="second-step-monthly-container">
-                        {/* <div className={ activeToggle.id === "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id === "2nd" ? activeToggle.contentHeight : 0 }}> */}
+                        {/* <div className={ activeToggle.id == "2nd" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id == "2nd" ? activeToggle.contentHeight : 0 }}> */}
                         <div className={`accordion-content-container active`}>
                             <div ref={ props.secondContentHeightRef } className="accordion-content">
                                 { deliveryOption === 1 && 

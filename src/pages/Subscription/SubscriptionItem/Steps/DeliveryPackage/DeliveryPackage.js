@@ -40,7 +40,7 @@ const DeliveryPackage = props => {
     };
 
     return (
-        <div className={activeToggle.id === "1st" ? "first-step-main-container step-main-container active" : "first-step-main-container step-main-container inactive"}>
+        <div className={activeToggle.id == "1st" ? "first-step-main-container step-main-container active" : "first-step-main-container step-main-container inactive"}>
             <div className="step-child-container">
                 <div className="image-container">
                     <img src={StepOne} alt=""/>
@@ -49,7 +49,7 @@ const DeliveryPackage = props => {
                     <div onClick={ onOpenToggle } className="step-heading">
                         <h4>1. Select Delivery Package</h4>
                     </div>
-                    {/* <div className={ activeToggle.id === "1st" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id === "1st" ? activeToggle.contentHeight : 0 }}> */}
+                    {/* <div className={ activeToggle.id == "1st" ? `accordion-content-container active` : `accordion-content-container inactive`} style={{ height: activeToggle.id == "1st" ? activeToggle.contentHeight : 0 }}> */}
                     <div className={`accordion-content-container active`}>
                         <div ref={ props.firstContentHeightRef } className="accordion-content">
                             <div className="first-step-container">

@@ -48,42 +48,42 @@ export default function CarouselModal(props) {
                         <div className="button-and-details">
                             <div className="product-details">
                                 {
-                                    props.selectedIndex === 0 || props.selectedIndex === 6 ?
+                                    props.selectedIndex == 0 || props.selectedIndex == 6 ?
                                         <CarouselModalDetails 
                                             index1={0}
                                             index2={1}
                                             index3={2}
                                             index4={3}
                                         /> :
-                                    props.selectedIndex === 1 || props.selectedIndex === 7 ?
+                                    props.selectedIndex == 1 || props.selectedIndex == 7 ?
                                         <CarouselModalDetails 
                                             index1={4}
                                             index2={5}
                                             index3={6}
                                             index4={7}
                                         /> :
-                                    props.selectedIndex === 2 || props.selectedIndex === 8 ?
+                                    props.selectedIndex == 2 || props.selectedIndex == 8 ?
                                         <CarouselModalDetails 
                                             index1={16}
                                             index2={17}
                                             index3={18}
                                             index4={19}
                                         /> :
-                                    props.selectedIndex === 3 || props.selectedIndex === 9 ?
+                                    props.selectedIndex == 3 || props.selectedIndex == 9 ?
                                         <CarouselModalDetails 
                                             index1={12}
                                             index2={13}
                                             index3={14}
                                             index4={15}
                                         /> :
-                                    props.selectedIndex === 4 || props.selectedIndex === 10 ?
+                                    props.selectedIndex == 4 || props.selectedIndex == 10 ?
                                         <CarouselModalDetails 
                                             index1={8}
                                             index2={9}
                                             index3={10}
                                             index4={11}
                                         /> :
-                                    // props.selectedIndex === 5 || props.selectedIndex === 11 ?
+                                    // props.selectedIndex == 5 || props.selectedIndex == 11 ?
                                     //     <CarouselModalDetails 
                                     //         index1={26}
                                     //     /> :

@@ -13,7 +13,7 @@ const Product = (props) => {
     console.log(((selected[props.month] || {}).products || {}));
     
     const onSelect = () => {
-        if( productQty === 0) {
+        if( productQty == 0) {
             props.fe_subscription_actions.updateCustomQtys({
                 month: props.month,
                 product: {...product, qty: 1},

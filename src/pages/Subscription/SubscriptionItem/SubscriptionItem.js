@@ -50,29 +50,29 @@ const SubscriptionItem = props => {
                         <div className="logo-container">
                             <div className="logo-content-container">
                                 <div className="logo-content selected">
-                                    <img src={subscription === "trio" ? TrioLogo : subscription === "plus-a" || "plus-b" ? PlusLogo : subscription === "max-a" || "max-b" || "max-c" ? MaxLogo : ""} alt=""/>
+                                    <img src={subscription == "trio" ? TrioLogo : subscription == "plus-a" || "plus-b" ? PlusLogo : subscription == "max-a" || "max-b" || "max-c" ? MaxLogo : ""} alt=""/>
                                 </div>
                               <div className="not-selected">
                                 <div className="logo-content inactive">
-                                        <img src={subscription === "plus-a" || "plus-b" ? MaxLogo : subscription === "max-a" || "max-b" || "max-c" ? PlusLogo : TrioLogo} alt=""/>
+                                        <img src={subscription == "plus-a" || "plus-b" ? MaxLogo : subscription == "max-a" || "max-b" || "max-c" ? PlusLogo : TrioLogo} alt=""/>
                                     </div>
                                     <div className="logo-content inactive">
-                                        <img src={subscription === "max-a" || "max-b" || "max-c" ? TrioLogo : subscription === "trio" ? PlusLogo : MaxLogo} alt=""/>
+                                        <img src={subscription == "max-a" || "max-b" || "max-c" ? TrioLogo : subscription == "trio" ? PlusLogo : MaxLogo} alt=""/>
                                     </div>
                               </div>
                             </div>
                         </div>  
                         <div className="product-page-heading-content-container">
                             <div className="heading-container">
-                                <h1>{ subscription === "trio" ? "Nutri Chunks Protect Trio" : subscription === "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max" }</h1>
+                                <h1>{ subscription == "trio" ? "Nutri Chunks Protect Trio" : subscription == "plus" ? "Nutri Chunks Protect Plus" : "Nutri Chunks Protect Max" }</h1>
                             </div>
                             <div className="month-subscription-container">
-                                <h6>{ subscription === "trio" ? "3-month subscription" : subscription === "plus" ? "6-month subscription" : "1-year subscription" }</h6>
+                                <h6>{ subscription == "trio" ? "3-month subscription" : subscription == "plus" ? "6-month subscription" : "1-year subscription" }</h6>
                             </div>
                             <div className="month-inclussion-container">
                                 <div className="inclussion-content">
                                     {
-                                        subscription === "trio" ? 
+                                        subscription == "trio" ? 
                                             <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
@@ -80,7 +80,7 @@ const SubscriptionItem = props => {
                                                 <p className="excluded">Pet Care Package</p>
                                                 <p className="excluded">Discount</p>
                                             </div> : 
-                                        subscription === "plus-a" ?
+                                        subscription == "plus-a" ?
                                               <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
@@ -88,7 +88,7 @@ const SubscriptionItem = props => {
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Discount</p>
                                             </div> :
-                                        subscription === "plus-b" ? 
+                                        subscription == "plus-b" ? 
                                               <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
@@ -96,7 +96,7 @@ const SubscriptionItem = props => {
                                                 <p className="included">Pet Care Package</p>
                                                 <p className="excluded">Discount</p>
                                             </div> : 
-                                        subscription === "max-a" ?
+                                        subscription == "max-a" ?
                                               <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
@@ -104,7 +104,7 @@ const SubscriptionItem = props => {
                                                 <p className="included">Pet Care Package</p>
                                                 <p className="included">Discount 8%</p>
                                             </div> : 
-                                        subscription === "max-b" ?
+                                        subscription == "max-b" ?
                                               <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
@@ -112,7 +112,7 @@ const SubscriptionItem = props => {
                                                 <p className="included">Pet Care Package</p>
                                                 <p className="included">Discount 5%</p>
                                             </div> : 
-                                        subscription === "max-c" ? 
+                                        subscription == "max-c" ? 
                                               <div className="content">                                               
                                                 <p className="included">Free Delivery</p>
                                                 <p className="included">Dog Insurance Package</p>
