@@ -86,16 +86,16 @@ const hasJsxRuntime = (() => {
 })();
 
 
-module.exports = {
-  devServer : {
-    allowedHosts : [
-        'localhost', 
-        'ondigitalocean.com',
-        'sanmiguelpetcare.com',
-        'sea-lion-app-lib2w.ondigitalocean.app'
-    ] 
-  }
-}
+// module.exports = {
+//   devServer : {
+//     allowedHosts : [
+//         'localhost', 
+//         'ondigitalocean.com',
+//         'sanmiguelpetcare.com',
+//         'sea-lion-app-lib2w.ondigitalocean.app'
+//     ] 
+//   }
+// }
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
