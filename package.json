@@ -43,6 +43,7 @@
     "firebase": "^9.9.4",
     "framer-motion": "^7.10.3",
     "fs-extra": "^10.0.0",
+    "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
