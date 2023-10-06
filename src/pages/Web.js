@@ -48,7 +48,7 @@ const WebPage = props => {
 
     // const DistributorLocation = props.fe_distributioner_state.distributor
 
-    useEffect(async () => {
+    useEffect( () => {
 
         if(Auth.token_id && Auth.user_token) {
             Auth.validateUser(
