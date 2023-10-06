@@ -104,7 +104,7 @@ export default function HeroSection() {
             <>
                 <div className="hero-section-content-container">
                    
-                        <motion.div variants={variantA} key={props.key} initial="init" animate="current" exit="exit" className="text-container">
+                        <motion.div variants={variantA} key={props.keyData} initial="init" animate="current" exit="exit" className="text-container">
                         <motion.h1 variants={variantA} >Keep them Listo Ganado with <span>Nutri Chunks!</span></motion.h1>
                             <motion.p variants={variantA} >Sustain them from the inside with premium dog food to keep them healthy, active, and happy.</motion.p>
                             {/* <Link to="/products"><motion.button variants={variantA} >SHOP NOW</motion.button></Link> */}
@@ -124,7 +124,7 @@ export default function HeroSection() {
             <>
                 <div className="hero-section-content-container second-slide">
                    
-                        <motion.div variants={variantA} key={props.key} initial="init" animate="current" exit="exit" className="text-container">
+                        <motion.div variants={variantA} key={props.keyData} initial="init" animate="current" exit="exit" className="text-container">
                             <motion.h1 variants={variantA} >Have your peace of mind</motion.h1>
                             <motion.p variants={variantA} >Life can be so unpredictable - that's why our subscription based program includes emergency insurance!</motion.p>
                             <Link to=""><motion.button variants={variantA} >SUBSCRIBE</motion.button></Link>
@@ -142,7 +142,7 @@ export default function HeroSection() {
             <>
                 <div className="hero-section-content-container">
                    
-                        <motion.div variants={variantA} key={props.key} initial="init" animate="current" exit="exit" className="text-container">
+                        <motion.div variants={variantA} key={props.keyData} initial="init" animate="current" exit="exit" className="text-container">
                             <motion.h1 variants={variantA} >Junifer <span>Nutri Chunks!</span></motion.h1>
                             <motion.p variants={variantA} >Sustain them from the inside with premium dog food to keep them healthy, active, and happy.</motion.p>
                             <motion.button variants={variantA} >SHOP NOW</motion.button>
@@ -160,7 +160,7 @@ export default function HeroSection() {
             <>
                 <div className="hero-section-content-container">
                    
-                        <motion.div variants={variantA} key={props.key} initial="init" animate="current" exit="exit" className="text-container">
+                        <motion.div variants={variantA} key={props.keyData} initial="init" animate="current" exit="exit" className="text-container">
                             <motion.h1 variants={variantA} >Julius <span>Nutri Chunks!</span></motion.h1>
                             <motion.p variants={variantA} >Sustain them from the inside with premium dog food to keep them healthy, active, and happy.</motion.p>
                             <motion.button variants={variantA} >SHOP NOW</motion.button>
@@ -201,8 +201,8 @@ export default function HeroSection() {
                     <div className="hero-section-container">
                         <AnimatePresence>
                         {
-                            elements == 1 ? <FirstSlide key={'a'}/> : 
-                            elements == 2 ? <SecondSlide key={'b'}/> : 
+                            elements == 1 ? <FirstSlide keyData={'a'}/> : 
+                            elements == 2 ? <SecondSlide keyData={'b'}/> : 
                             /*elements == 3 ? <ThirdSlide key={'c'}/> : 
                              elements == 4 ? <FourthSlide key={'d'}/> : 
                             elements== 5 ? <FifthSlide key={'e'}/> : */""}
